@@ -1,0 +1,4 @@
+dash-html-components==0.13.4
+gunicorn==19.9.0
+jupyter==1.0.0
+pandas==0.24.0
