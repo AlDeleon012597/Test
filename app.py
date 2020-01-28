@@ -6,9 +6,9 @@ import dash
 import dash_core_components as dcc
 import dash_html_components as html
 
-df = pd.read_csv(r'G:\Projects\SVI_barchart\Municipio_SVI_2018_0.csv')
+df = pd.read_csv(r'Municipio_SVI_2018_0.csv')
 
-with open(r'G:\Projects\SVI_barchart\Municipio_SVI_2018.geojson') as f:
+with open(r'Municipio_SVI_2018.geojson') as f:
     pr_data = json.load(f)
 for feature in pr_data['features']:
     geoid = feature["properties"]['GEOID']
