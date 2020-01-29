@@ -8,9 +8,8 @@ import dash_html_components as html
 
 df = pd.read_csv(r'Municipio_SVI_2018_0.csv')
 
-with open(r'Municipio_SVI_2018.geojson') as json_file:
-    pr_data = json.load(json_file)
-
+with open(r'Municipio_SVI_2018.geojson') as f:
+    pr_data = json.load(f)
 for feature in pr_data['features']:
     geoid = feature["properties"]['GEOID']
     feature['id'] = geoid
@@ -119,36 +118,40 @@ layout.update(updatemenus=list([
          xanchor='left',
          yanchor='middle',
          buttons=list([
-            dict(
-                args=['visible', [True, False, False, False, False]],
-                label='Household Composition and Disability',
-                method='restyle'
-                ),
-            dict(
-                args=['visible', [False, True, False, False, False]],
-                label='Minority Status and Language',
-                method='restyle'
-                ),
 
-            dict(
-                args=['visible', [False, False, True, False, False]],
-                label='Housing and Transportiation',
-                method='restyle'
+             dict(
+                 args=['visible', [True, False, False, False,False]],
+                 label='Household Composition and Disability',
+                 method='restyle'
+                 ),
+
+             dict(
+                 args=['visible', [False, True, False, False,False]],
+                 label='Minority Status and Language',
+                 method='restyle'
+                 ),
+
+             dict(
+                 args=['visible', [False, False, True, False,False]],
+                 label='Housing and Transportiation',
+                 method='restyle'
+                 ),
+
+             dict(
+                 args=['visible', [False, False, False, True,False]],
+                 label='Socioeconomic Status',
+                 method='restyle'
                 ),
+			dict(
+                 args=['visible', [False, False, False, False, True]],
+                 label='Overall Rank',
+                 method='restyle'
+                )
 
-            dict(
-                args=['visible', [False, False, False, True, False]],
-                label='Socioeconomic Status',
-                method='restyle'
-            ),
-
-            dict(
-                args=['visible', [False, False, False, False, True]],
-                label='Overall Rank',
-                method='restyle'
-            )
             ]),
-         )]))
+
+        )]))
+
 
 fig = go.Figure(data=traces, layout=layout)
 
@@ -156,7 +159,8 @@ external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
 
 app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
 
-#Slow code block
+server = app.server
+
 app.layout = html.Div(children=[
     html.H1(children=''),
     dcc.Graph(
