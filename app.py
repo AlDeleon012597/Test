@@ -5,18 +5,19 @@ import plotly.graph_objects as go
 import dash
 import dash_core_components as dcc
 import dash_html_components as html
+from dash.dependencies import Output, Input
 
-df = pd.read_csv(r'Municipio_SVI_2018_0.csv')
+countys_csv = pd.read_csv(r'G:\Projects\SVI_barchart\Municipio_SVI_2018_0.csv',encoding = 'ISO-8859-1',sep = '\t')
+tracts_csv = pd.read_csv(r'G:\Projects\SVI_barchart\Tracts_SVI_2018_0.csv',encoding = 'ISO-8859-1',sep = '\t')
 
-with open(r'Municipio_SVI_2018.geojson') as f:
-    pr_data = json.load(f)
-for feature in pr_data['features']:
-    geoid = feature["properties"]['GEOID']
-    feature['id'] = geoid
+##geojsons for chloropleth map
+county_geojson = r'G:\Projects\SVI_barchart\Municipio_SVI_2018.geojson'
+tracts_geojson = r'G:\Projects\SVI_barchart\Tracts_SVI_2018.geojson'
 
+##mapbox token needed to display pr basemap
 mapbox_accesstoken = 'pk.eyJ1IjoiYWxleGRlbGVvbjEyMyIsImEiOiJjazV1ZWRyanAwYzc2M2pucHVjejdrd2RhIn0.Z1O79Tq170L5eAzyKa-1jQ'
-municipio =df['NAME'].str.title().tolist()
 
+##Colors for bar graph and chloropleth map
 pl_deep=[[0.0, 'rgb(253, 253, 204)'],
          [0.1, 'rgb(201, 235, 177)'],
          [0.2, 'rgb(145, 216, 163)'],
@@ -29,36 +30,102 @@ pl_deep=[[0.0, 'rgb(253, 253, 204)'],
          [0.9, 'rgb(55, 44, 80)'],
          [1.0, 'rgb(39, 26, 44)']]
 
-themes = {'Household Composition and Disability':'HSECOMP',
-          'Minority Status and Language':'MINLANG',
-          'Housing and Transportiation':'HSETRANS',
+### SVI Themes 
+themes = {'Household Composition and Disability':'HSECOMP', 
+          'Minority Status and Language':'MINLANG', 
+          'Housing and Transportiation':'HSETRANS', 
           'Socioeconomic Status':'SOCIOECON',
-          'Overall Rank':'OVERALL'}
+          'Overall Rank':'OVERALL'}  
+		  
 
-traces = []
-# Suburbs order should be the same as "id" passed to location
+# Center of Puerto Rico:latitude and longitude values
+latitude = 18.210445
+longitude = -66.487722
 
-for theme in themes.items():
-    visible = lambda x: True if x == "Household Composition and Disability" else False
+external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
+
+app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
+
+app.layout = html.Div(children=[
+    html.H1(children=''),
+    html.Div([
+        dcc.Dropdown(
+            id='theme',
+            options=[{'label': theme, 'value': themes[theme]} for theme in themes],
+            value='HSECOMP'
+            ),
+        dcc.RadioItems(
+            id='geo',
+            options=[{'label': i, 'value': i} for i in ['Tracts', 'County']],
+            value='Tracts',
+            labelStyle={'display': 'inline-block'}
+            )]),
+    
+    dcc.Graph(
+        id='pr-chloro'
+    ),
+    html.Div(children='''
+        Data source from CDC @Jan 2020
+    ''')
+   ])
+
+###helper functions###
+def parsegeojson(geo):
+    with open(geo) as f:
+        pr_data = json.load(f)
+        for feature in pr_data['features']:
+            geoid = feature["properties"]['GEOID']
+            feature['id'] = geoid
+    return pr_data
+
+def rankThemes(df_themes,theme):
+    themerank = theme + "_rank"
+    df_themes[themerank] = df_themes[theme].rank(ascending=False)
+    y = df_themes.sort_values([themerank])["NAME"].tolist()[:40]
+    x = df_themes.sort_values([themerank])[theme].tolist()[:40]
+    return x,y
+
+@app.callback(
+    Output('pr-chloro', 'figure'),
+    [Input('theme', 'value'),
+     Input('geo', 'value')])
+
+def update_graph(theme, geo):
+    if geo == 'County':
+        geo = county_geojson
+        tract  =  False
+        df = countys_csv
+        text = df['NAME'].str.title().tolist()
+        x,y = rankThemes(df,theme)
+    if geo == 'Tracts':
+        geo = tracts_geojson
+        tract = True
+        df = tracts_csv
+        text = df['Tract_Name'].str.title().tolist()
+        avg_themes = df.groupby(['NAME'],as_index=False)['HSECOMP','MINLANG','HSETRANS','SOCIOECON','OVERALL'].mean()
+        x,y =rankThemes(avg_themes,theme)
+
+    pr_data = parsegeojson(geo)
+
+    traces = []    
     traces.append(go.Choroplethmapbox(
         geojson = pr_data,
         locations = df['GEOID'].tolist(),
-        z = df[theme[1]].tolist(),
+        z = df[theme].tolist(), 
         colorscale = pl_deep,
-        text = municipio,
+        text = text, 
         colorbar = dict(thickness=20, ticklen=3),
         marker_line_width=0, marker_opacity=0.7,
-        visible=visible(theme[0]),
         subplot='mapbox1',
         hovertemplate = "<b>%{text}</b><br><br>" +
                         "Price: %{z}<br>" +
                         "<extra></extra>")) # "<extra></extra>" means we don't display the info in the secondary box, such as trace id.
-
-    themerank = theme[1] + "_rank"
-    df[themerank] =df[theme[1]].rank(ascending=False)
+    
+    themerank = theme + "_rank"
+    df[themerank] =df[theme].rank(ascending=False)
     traces.append(go.Bar(
-        y=df.sort_values([themerank])["NAME"].tolist()[:40],
-        x=df.sort_values([themerank])[theme[1]].tolist()[:40],
+        y=y,
+        x=x,
         xaxis='x2',
         yaxis='y2',
         marker=dict(
@@ -67,110 +134,45 @@ for theme in themes.items():
                 color='rgba(91, 207, 135, 2.0)',
                 width=0.7),
         ),
-        visible=visible(theme[0]),
-        #name='Top 10 suburbs with the highest {} median price'.format(theme[0]),
         orientation='h',
     ))
+    layout = go.Layout(
+        title = {'text': 'Social Vulnerability Index 2018',
+                     'font': {'size':28, 
+                                      'family':'Arial'}},
+        autosize = True,
+        mapbox1 = dict(
+            domain = {'x': [0.3, .7],'y': [.4, .95]},
+            center = dict(lat=latitude, lon=longitude),
+            accesstoken = mapbox_accesstoken, 
+            zoom = 7.5,
+            style ='carto-positron'
+            ),
 
-# Puerto Rico latitude and longitude values
+        xaxis2={
+            'zeroline': False,
+            "showline": False,
+            "showticklabels":True,
+            'showgrid':True,
+            'domain': [0, 0.2],
+            'side': 'left',
+            'anchor': 'x2',
+        },
 
-latitude = 18.210445
-longitude = -66.487722
+        yaxis2={
+            'domain': [0, .95],
+            'range': [0,1],
+            'anchor': 'y2',
+            'autorange': 'reversed',
+        },
+        margin=dict(l=120, r=50, t=60, b=60),
+        paper_bgcolor='rgb(204, 204, 204)',
+        plot_bgcolor='rgb(204, 204, 204)',
+        height =800
+    )
+    
+    return {"data":traces,"layout":layout}
 
-layout = go.Layout(
-    title = {'text': 'Social Vulnerability Index 2018',
-    		 'font': {'size':28,
-    		 		  'family':'Arial'}},
-    autosize = True,
-    mapbox1 = dict(
-        domain = {'x': [0.4, 1],'y': [0, .95]},
-        center = dict(lat=latitude, lon=longitude),
-        accesstoken = mapbox_accesstoken,
-        zoom = 7.5),
-
-    xaxis2={
-        'zeroline': False,
-        "showline": False,
-        "showticklabels":True,
-        'showgrid':True,
-        'domain': [0, 0.3],
-        'side': 'left',
-        'anchor': 'x2',
-
-    },
-
-    yaxis2={
-        'domain': [0, .95],
-        'range': [0,1],
-        'anchor': 'y2',
-        'autorange': 'reversed',
-    },
-    margin=dict(l=120, r=50, t=60, b=60),
-    paper_bgcolor='rgb(204, 204, 204)',
-    plot_bgcolor='rgb(204, 204, 204)',
-    height =800
-)
-
-layout.update(updatemenus=list([
-
-    dict(x=0,
-         y=1,
-         xanchor='left',
-         yanchor='middle',
-         buttons=list([
-
-             dict(
-                 args=['visible', [True, False, False, False,False]],
-                 label='Household Composition and Disability',
-                 method='restyle'
-                 ),
-
-             dict(
-                 args=['visible', [False, True, False, False,False]],
-                 label='Minority Status and Language',
-                 method='restyle'
-                 ),
-
-             dict(
-                 args=['visible', [False, False, True, False,False]],
-                 label='Housing and Transportiation',
-                 method='restyle'
-                 ),
-
-             dict(
-                 args=['visible', [False, False, False, True,False]],
-                 label='Socioeconomic Status',
-                 method='restyle'
-                ),
-			dict(
-                 args=['visible', [False, False, False, False, True]],
-                 label='Overall Rank',
-                 method='restyle'
-                )
-
-            ]),
-
-        )]))
-
-
-fig = go.Figure(data=traces, layout=layout)
-
-external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
-
-app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
-
-server = app.server
-
-app.layout = html.Div(children=[
-    html.H1(children=''),
-    dcc.Graph(
-        id='example-graph-1',
-        figure=fig
-    ),
-    html.Div(children='''
-        Data source from CDC @Jan 2020
-    ''')
-   ])
 
 if __name__ == '__main__':
     app.run_server(debug=True)
