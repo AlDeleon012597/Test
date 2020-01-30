@@ -13,7 +13,7 @@ with open(r'Municipio_SVI_2018.geojson') as f:
 for feature in pr_data['features']:
     geoid = feature["properties"]['GEOID']
     feature['id'] = geoid
-    
+
 mapbox_accesstoken = 'pk.eyJ1IjoiYWxleGRlbGVvbjEyMyIsImEiOiJjazV1ZWRyanAwYzc2M2pucHVjejdrd2RhIn0.Z1O79Tq170L5eAzyKa-1jQ'
 municipio =df['NAME'].str.title().tolist()
 
@@ -29,13 +29,13 @@ pl_deep=[[0.0, 'rgb(253, 253, 204)'],
          [0.9, 'rgb(55, 44, 80)'],
          [1.0, 'rgb(39, 26, 44)']]
 
-themes = {'Household Composition and Disability':'HSECOMP', 
-          'Minority Status and Language':'MINLANG', 
-          'Housing and Transportiation':'HSETRANS', 
+themes = {'Household Composition and Disability':'HSECOMP',
+          'Minority Status and Language':'MINLANG',
+          'Housing and Transportiation':'HSETRANS',
           'Socioeconomic Status':'SOCIOECON',
-          'Overall Rank':'OVERALL'}  
-		  
-traces = []    
+          'Overall Rank':'OVERALL'}
+
+traces = []
 # Suburbs order should be the same as "id" passed to location
 
 for theme in themes.items():
@@ -43,9 +43,9 @@ for theme in themes.items():
     traces.append(go.Choroplethmapbox(
         geojson = pr_data,
         locations = df['GEOID'].tolist(),
-        z = df[theme[1]].tolist(), 
+        z = df[theme[1]].tolist(),
         colorscale = pl_deep,
-        text = municipio, 
+        text = municipio,
         colorbar = dict(thickness=20, ticklen=3),
         marker_line_width=0, marker_opacity=0.7,
         visible=visible(theme[0]),
@@ -53,7 +53,7 @@ for theme in themes.items():
         hovertemplate = "<b>%{text}</b><br><br>" +
                         "Price: %{z}<br>" +
                         "<extra></extra>")) # "<extra></extra>" means we don't display the info in the secondary box, such as trace id.
-    
+
     themerank = theme[1] + "_rank"
     df[themerank] =df[theme[1]].rank(ascending=False)
     traces.append(go.Bar(
@@ -79,13 +79,13 @@ longitude = -66.487722
 
 layout = go.Layout(
     title = {'text': 'Social Vulnerability Index 2018',
-    		 'font': {'size':28, 
+    		 'font': {'size':28,
     		 		  'family':'Arial'}},
     autosize = True,
     mapbox1 = dict(
         domain = {'x': [0.4, 1],'y': [0, .95]},
         center = dict(lat=latitude, lon=longitude),
-        accesstoken = mapbox_accesstoken, 
+        accesstoken = mapbox_accesstoken,
         zoom = 7.5),
 
     xaxis2={
@@ -96,7 +96,7 @@ layout = go.Layout(
         'domain': [0, 0.3],
         'side': 'left',
         'anchor': 'x2',
-        
+
     },
 
     yaxis2={
@@ -158,6 +158,8 @@ fig = go.Figure(data=traces, layout=layout)
 external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
 
 app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
+
+server = app.server
 
 app.layout = html.Div(children=[
     html.H1(children=''),
