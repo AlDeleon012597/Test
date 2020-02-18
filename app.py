@@ -435,5 +435,7 @@ def update_bar(theme, geo):
     
     return {"data":[traces],"layout":layout}
 
+server = app.server
+
 if __name__ == '__main__':
     app.run_server(debug=True)
