@@ -1,0 +1,946 @@
+NAME,tothousing,state,county,tract,GEOID
+"Census Tract 1803.01, Humacao Municipio, Puerto Rico",191,72,069,180301,72069180301
+"Census Tract 1803.02, Humacao Municipio, Puerto Rico",255,72,069,180302,72069180302
+"Census Tract 1804, Humacao Municipio, Puerto Rico",287,72,069,180400,72069180400
+"Census Tract 1805, Humacao Municipio, Puerto Rico",190,72,069,180500,72069180500
+"Census Tract 1806, Humacao Municipio, Puerto Rico",247,72,069,180600,72069180600
+"Census Tract 1807, Humacao Municipio, Puerto Rico",333,72,069,180700,72069180700
+"Census Tract 1808, Humacao Municipio, Puerto Rico",220,72,069,180800,72069180800
+"Census Tract 1809.01, Humacao Municipio, Puerto Rico",163,72,069,180901,72069180901
+"Census Tract 1809.02, Humacao Municipio, Puerto Rico",244,72,069,180902,72069180902
+"Census Tract 9918, Humacao Municipio, Puerto Rico",0,72,069,991800,72069991800
+"Census Tract 4101, Isabela Municipio, Puerto Rico",247,72,071,410100,72071410100
+"Census Tract 4102, Isabela Municipio, Puerto Rico",191,72,071,410200,72071410200
+"Census Tract 4103, Isabela Municipio, Puerto Rico",165,72,071,410300,72071410300
+"Census Tract 4104.01, Isabela Municipio, Puerto Rico",255,72,071,410401,72071410401
+"Census Tract 4104.02, Isabela Municipio, Puerto Rico",312,72,071,410402,72071410402
+"Census Tract 4105, Isabela Municipio, Puerto Rico",281,72,071,410500,72071410500
+"Census Tract 4106, Isabela Municipio, Puerto Rico",162,72,071,410600,72071410600
+"Census Tract 4107.01, Isabela Municipio, Puerto Rico",212,72,071,410701,72071410701
+"Census Tract 4107.02, Isabela Municipio, Puerto Rico",298,72,071,410702,72071410702
+"Census Tract 9900, Isabela Municipio, Puerto Rico",0,72,071,990000,72071990000
+"Census Tract 9560, Jayuya Municipio, Puerto Rico",219,72,073,956000,72073956000
+"Census Tract 9561, Jayuya Municipio, Puerto Rico",260,72,073,956100,72073956100
+"Census Tract 9562, Jayuya Municipio, Puerto Rico",294,72,073,956200,72073956200
+"Census Tract 7101.02, Juana Diaz Municipio, Puerto Rico",346,72,075,710102,72075710102
+"Census Tract 7102, Juana Diaz Municipio, Puerto Rico",377,72,075,710200,72075710200
+"Census Tract 7103.01, Juana Diaz Municipio, Puerto Rico",273,72,075,710301,72075710301
+"Census Tract 7103.02, Juana Diaz Municipio, Puerto Rico",297,72,075,710302,72075710302
+"Census Tract 7104, Juana Diaz Municipio, Puerto Rico",265,72,075,710400,72075710400
+"Census Tract 7105, Juana Diaz Municipio, Puerto Rico",154,72,075,710500,72075710500
+"Census Tract 7106, Juana Diaz Municipio, Puerto Rico",251,72,075,710600,72075710600
+"Census Tract 7107, Juana Diaz Municipio, Puerto Rico",216,72,075,710700,72075710700
+"Census Tract 7108, Juana Diaz Municipio, Puerto Rico",267,72,075,710800,72075710800
+"Census Tract 7109.01, Juana Diaz Municipio, Puerto Rico",364,72,075,710901,72075710901
+"Census Tract 7109.02, Juana Diaz Municipio, Puerto Rico",374,72,075,710902,72075710902
+"Census Tract 7110.02, Juana Diaz Municipio, Puerto Rico",280,72,075,711002,72075711002
+"Census Tract 9900.01, Juana Diaz Municipio, Puerto Rico",0,72,075,990001,72075990001
+"Census Tract 5001, Juncos Municipio, Puerto Rico",304,72,077,500100,72077500100
+"Census Tract 5002, Juncos Municipio, Puerto Rico",196,72,077,500200,72077500200
+"Census Tract 5003.01, Juncos Municipio, Puerto Rico",301,72,077,500301,72077500301
+"Census Tract 5003.02, Juncos Municipio, Puerto Rico",229,72,077,500302,72077500302
+"Census Tract 5004.01, Juncos Municipio, Puerto Rico",362,72,077,500401,72077500401
+"Census Tract 5004.02, Juncos Municipio, Puerto Rico",281,72,077,500402,72077500402
+"Census Tract 8501.01, Lajas Municipio, Puerto Rico",241,72,079,850101,72079850101
+"Census Tract 8501.02, Lajas Municipio, Puerto Rico",257,72,079,850102,72079850102
+"Census Tract 8502, Lajas Municipio, Puerto Rico",337,72,079,850200,72079850200
+"Census Tract 8503, Lajas Municipio, Puerto Rico",248,72,079,850300,72079850300
+"Census Tract 8504, Lajas Municipio, Puerto Rico",190,72,079,850400,72079850400
+"Census Tract 9911, Lajas Municipio, Puerto Rico",0,72,079,991100,72079991100
+"Census Tract 9577, Lares Municipio, Puerto Rico",286,72,081,957700,72081957700
+"Census Tract 9578, Lares Municipio, Puerto Rico",270,72,081,957800,72081957800
+"Census Tract 9579, Lares Municipio, Puerto Rico",328,72,081,957900,72081957900
+"Census Tract 9580, Lares Municipio, Puerto Rico",193,72,081,958000,72081958000
+"Census Tract 9581, Lares Municipio, Puerto Rico",249,72,081,958100,72081958100
+"Census Tract 9582, Lares Municipio, Puerto Rico",220,72,081,958200,72081958200
+"Census Tract 9583, Lares Municipio, Puerto Rico",153,72,081,958300,72081958300
+"Census Tract 9584, Lares Municipio, Puerto Rico",193,72,081,958400,72081958400
+"Census Tract 9597, Las Marias Municipio, Puerto Rico",319,72,083,959700,72083959700
+"Census Tract 9598, Las Marias Municipio, Puerto Rico",158,72,083,959800,72083959800
+"Census Tract 9599, Las Marias Municipio, Puerto Rico",213,72,083,959900,72083959900
+"Census Tract 1901.01, Las Piedras Municipio, Puerto Rico",296,72,085,190101,72085190101
+"Census Tract 1901.02, Las Piedras Municipio, Puerto Rico",316,72,085,190102,72085190102
+"Census Tract 1902.01, Las Piedras Municipio, Puerto Rico",282,72,085,190201,72085190201
+"Census Tract 1902.02, Las Piedras Municipio, Puerto Rico",243,72,085,190202,72085190202
+"Census Tract 1903.01, Las Piedras Municipio, Puerto Rico",300,72,085,190301,72085190301
+"Census Tract 1903.02, Las Piedras Municipio, Puerto Rico",330,72,085,190302,72085190302
+"Census Tract 1101.01, Loiza Municipio, Puerto Rico",174,72,087,110101,72087110101
+"Census Tract 1101.02, Loiza Municipio, Puerto Rico",226,72,087,110102,72087110102
+"Census Tract 1102, Loiza Municipio, Puerto Rico",182,72,087,110200,72087110200
+"Census Tract 1103.01, Loiza Municipio, Puerto Rico",277,72,087,110301,72087110301
+"Census Tract 1103.02, Loiza Municipio, Puerto Rico",245,72,087,110302,72087110302
+"Census Tract 1103.03, Loiza Municipio, Puerto Rico",334,72,087,110303,72087110303
+"Census Tract 1103.04, Loiza Municipio, Puerto Rico",290,72,087,110304,72087110304
+"Census Tract 1104, Loiza Municipio, Puerto Rico",213,72,087,110400,72087110400
+"Census Tract 1105, Loiza Municipio, Puerto Rico",115,72,087,110500,72087110500
+"Census Tract 1106, Loiza Municipio, Puerto Rico",252,72,087,110600,72087110600
+"Census Tract 9900, Loiza Municipio, Puerto Rico",0,72,087,990000,72087990000
+"Census Tract 1401.01, Luquillo Municipio, Puerto Rico",233,72,089,140101,72089140101
+"Census Tract 1401.02, Luquillo Municipio, Puerto Rico",230,72,089,140102,72089140102
+"Census Tract 1402.01, Luquillo Municipio, Puerto Rico",135,72,089,140201,72089140201
+"Census Tract 1402.02, Luquillo Municipio, Puerto Rico",335,72,089,140202,72089140202
+"Census Tract 1403, Luquillo Municipio, Puerto Rico",359,72,089,140300,72089140300
+"Census Tract 9900.01, Luquillo Municipio, Puerto Rico",0,72,089,990001,72089990001
+"Census Tract 5701, Manati Municipio, Puerto Rico",291,72,091,570100,72091570100
+"Census Tract 5702.01, Manati Municipio, Puerto Rico",382,72,091,570201,72091570201
+"Census Tract 5702.02, Manati Municipio, Puerto Rico",220,72,091,570202,72091570202
+"Census Tract 5703, Manati Municipio, Puerto Rico",281,72,091,570300,72091570300
+"Census Tract 5704, Manati Municipio, Puerto Rico",260,72,091,570400,72091570400
+"Census Tract 5705, Manati Municipio, Puerto Rico",364,72,091,570500,72091570500
+"Census Tract 5706, Manati Municipio, Puerto Rico",246,72,091,570600,72091570600
+"Census Tract 5707, Manati Municipio, Puerto Rico",296,72,091,570700,72091570700
+"Census Tract 5708, Manati Municipio, Puerto Rico",285,72,091,570800,72091570800
+"Census Tract 9900.25, Manati Municipio, Puerto Rico",0,72,091,990025,72091990025
+"Census Tract 9601, Maricao Municipio, Puerto Rico",272,72,093,960100,72093960100
+"Census Tract 9602, Maricao Municipio, Puerto Rico",217,72,093,960200,72093960200
+"Census Tract 9514, Maunabo Municipio, Puerto Rico",287,72,095,951400,72095951400
+"Census Tract 9515, Maunabo Municipio, Puerto Rico",168,72,095,951500,72095951500
+"Census Tract 9516, Maunabo Municipio, Puerto Rico",205,72,095,951600,72095951600
+"Census Tract 9900, Maunabo Municipio, Puerto Rico",0,72,095,990000,72095990000
+"Census Tract 801, Mayaguez Municipio, Puerto Rico",112,72,097,080100,72097080100
+"Census Tract 802, Mayaguez Municipio, Puerto Rico",158,72,097,080200,72097080200
+"Census Tract 803, Mayaguez Municipio, Puerto Rico",253,72,097,080300,72097080300
+"Census Tract 804, Mayaguez Municipio, Puerto Rico",129,72,097,080400,72097080400
+"Census Tract 805, Mayaguez Municipio, Puerto Rico",132,72,097,080500,72097080500
+"Census Tract 806, Mayaguez Municipio, Puerto Rico",131,72,097,080600,72097080600
+"Census Tract 808, Mayaguez Municipio, Puerto Rico",233,72,097,080800,72097080800
+"Census Tract 809, Mayaguez Municipio, Puerto Rico",126,72,097,080900,72097080900
+"Census Tract 810, Mayaguez Municipio, Puerto Rico",132,72,097,081000,72097081000
+"Census Tract 811, Mayaguez Municipio, Puerto Rico",104,72,097,081100,72097081100
+"Census Tract 812, Mayaguez Municipio, Puerto Rico",202,72,097,081200,72097081200
+"Census Tract 813, Mayaguez Municipio, Puerto Rico",175,72,097,081300,72097081300
+"Census Tract 815.01, Mayaguez Municipio, Puerto Rico",307,72,097,081501,72097081501
+"Census Tract 815.12, Mayaguez Municipio, Puerto Rico",234,72,097,081512,72097081512
+"Census Tract 815.22, Mayaguez Municipio, Puerto Rico",280,72,097,081522,72097081522
+"Census Tract 816.01, Mayaguez Municipio, Puerto Rico",323,72,097,081601,72097081601
+"Census Tract 816.02, Mayaguez Municipio, Puerto Rico",238,72,097,081602,72097081602
+"Census Tract 817, Mayaguez Municipio, Puerto Rico",237,72,097,081700,72097081700
+"Census Tract 818, Mayaguez Municipio, Puerto Rico",245,72,097,081800,72097081800
+"Census Tract 819, Mayaguez Municipio, Puerto Rico",207,72,097,081900,72097081900
+"Census Tract 820.01, Mayaguez Municipio, Puerto Rico",237,72,097,082001,72097082001
+"Census Tract 820.12, Mayaguez Municipio, Puerto Rico",193,72,097,082012,72097082012
+"Census Tract 820.22, Mayaguez Municipio, Puerto Rico",250,72,097,082022,72097082022
+"Census Tract 821.02, Mayaguez Municipio, Puerto Rico",253,72,097,082102,72097082102
+"Census Tract 821.03, Mayaguez Municipio, Puerto Rico",305,72,097,082103,72097082103
+"Census Tract 821.04, Mayaguez Municipio, Puerto Rico",198,72,097,082104,72097082104
+"Census Tract 9900, Mayaguez Municipio, Puerto Rico",0,72,097,990000,72097990000
+"Census Tract 4201, Moca Municipio, Puerto Rico",281,72,099,420100,72099420100
+"Census Tract 4202, Moca Municipio, Puerto Rico",277,72,099,420200,72099420200
+"Census Tract 4203.01, Moca Municipio, Puerto Rico",202,72,099,420301,72099420301
+"Census Tract 4203.02, Moca Municipio, Puerto Rico",256,72,099,420302,72099420302
+"Census Tract 4204.01, Moca Municipio, Puerto Rico",239,72,099,420401,72099420401
+"Census Tract 4204.02, Moca Municipio, Puerto Rico",322,72,099,420402,72099420402
+"Census Tract 4205, Moca Municipio, Puerto Rico",236,72,099,420500,72099420500
+"Census Tract 9552.01, Morovis Municipio, Puerto Rico",299,72,101,955201,72101955201
+"Census Tract 5606, Vega Baja Municipio, Puerto Rico",201,72,145,560600,72145560600
+"Census Tract 5607.01, Vega Baja Municipio, Puerto Rico",241,72,145,560701,72145560701
+"Census Tract 5607.02, Vega Baja Municipio, Puerto Rico",212,72,145,560702,72145560702
+"Census Tract 5608.01, Vega Baja Municipio, Puerto Rico",156,72,145,560801,72145560801
+"Census Tract 5608.02, Vega Baja Municipio, Puerto Rico",238,72,145,560802,72145560802
+"Census Tract 5609, Vega Baja Municipio, Puerto Rico",315,72,145,560900,72145560900
+"Census Tract 9900, Vega Baja Municipio, Puerto Rico",0,72,145,990000,72145990000
+"Census Tract 9505, Vieques Municipio, Puerto Rico",141,72,147,950500,72147950500
+"Census Tract 9506, Vieques Municipio, Puerto Rico",174,72,147,950600,72147950600
+"Census Tract 9900, Vieques Municipio, Puerto Rico",0,72,147,990000,72147990000
+"Census Tract 7201, Villalba Municipio, Puerto Rico",322,72,149,720100,72149720100
+"Census Tract 7203, Villalba Municipio, Puerto Rico",393,72,149,720300,72149720300
+"Census Tract 7204, Villalba Municipio, Puerto Rico",249,72,149,720400,72149720400
+"Census Tract 7205.02, Villalba Municipio, Puerto Rico",252,72,149,720502,72149720502
+"Census Tract 7205.03, Villalba Municipio, Puerto Rico",302,72,149,720503,72149720503
+"Census Tract 7205.04, Villalba Municipio, Puerto Rico",270,72,149,720504,72149720504
+"Census Tract 9506, Yabucoa Municipio, Puerto Rico",230,72,151,950600,72151950600
+"Census Tract 9507, Yabucoa Municipio, Puerto Rico",156,72,151,950700,72151950700
+"Census Tract 9508, Yabucoa Municipio, Puerto Rico",251,72,151,950800,72151950800
+"Census Tract 9509, Yabucoa Municipio, Puerto Rico",327,72,151,950900,72151950900
+"Census Tract 9510, Yabucoa Municipio, Puerto Rico",204,72,151,951000,72151951000
+"Census Tract 9511, Yabucoa Municipio, Puerto Rico",246,72,151,951100,72151951100
+"Census Tract 9512, Yabucoa Municipio, Puerto Rico",243,72,151,951200,72151951200
+"Census Tract 9513, Yabucoa Municipio, Puerto Rico",309,72,151,951300,72151951300
+"Census Tract 9900, Yabucoa Municipio, Puerto Rico",0,72,151,990000,72151990000
+"Census Tract 7501.01, Yauco Municipio, Puerto Rico",150,72,153,750101,72153750101
+"Census Tract 7501.02, Yauco Municipio, Puerto Rico",183,72,153,750102,72153750102
+"Census Tract 7502.01, Yauco Municipio, Puerto Rico",193,72,153,750201,72153750201
+"Census Tract 7502.02, Yauco Municipio, Puerto Rico",217,72,153,750202,72153750202
+"Census Tract 7503, Yauco Municipio, Puerto Rico",253,72,153,750300,72153750300
+"Census Tract 7504, Yauco Municipio, Puerto Rico",188,72,153,750400,72153750400
+"Census Tract 7505.01, Yauco Municipio, Puerto Rico",375,72,153,750501,72153750501
+"Census Tract 7505.02, Yauco Municipio, Puerto Rico",208,72,153,750502,72153750502
+"Census Tract 7505.03, Yauco Municipio, Puerto Rico",213,72,153,750503,72153750503
+"Census Tract 7506.01, Yauco Municipio, Puerto Rico",256,72,153,750601,72153750601
+"Census Tract 7506.02, Yauco Municipio, Puerto Rico",159,72,153,750602,72153750602
+"Census Tract 9552.02, Morovis Municipio, Puerto Rico",325,72,101,955202,72101955202
+"Census Tract 9553, Morovis Municipio, Puerto Rico",303,72,101,955300,72101955300
+"Census Tract 9554.01, Morovis Municipio, Puerto Rico",236,72,101,955401,72101955401
+"Census Tract 9554.02, Morovis Municipio, Puerto Rico",201,72,101,955402,72101955402
+"Census Tract 9555, Morovis Municipio, Puerto Rico",254,72,101,955500,72101955500
+"Census Tract 1701, Naguabo Municipio, Puerto Rico",226,72,103,170100,72103170100
+"Census Tract 1702, Naguabo Municipio, Puerto Rico",259,72,103,170200,72103170200
+"Census Tract 1703, Naguabo Municipio, Puerto Rico",185,72,103,170300,72103170300
+"Census Tract 1704, Naguabo Municipio, Puerto Rico",257,72,103,170400,72103170400
+"Census Tract 9900.13, Naguabo Municipio, Puerto Rico",0,72,103,990013,72103990013
+"Census Tract 5201, Naranjito Municipio, Puerto Rico",342,72,105,520100,72105520100
+"Census Tract 5202, Naranjito Municipio, Puerto Rico",318,72,105,520200,72105520200
+"Census Tract 5203, Naranjito Municipio, Puerto Rico",249,72,105,520300,72105520300
+"Census Tract 5204, Naranjito Municipio, Puerto Rico",312,72,105,520400,72105520400
+"Census Tract 5205, Naranjito Municipio, Puerto Rico",305,72,105,520500,72105520500
+"Census Tract 9548.01, Orocovis Municipio, Puerto Rico",243,72,107,954801,72107954801
+"Census Tract 9548.02, Orocovis Municipio, Puerto Rico",165,72,107,954802,72107954802
+"Census Tract 9549.01, Orocovis Municipio, Puerto Rico",222,72,107,954901,72107954901
+"Census Tract 9549.02, Orocovis Municipio, Puerto Rico",210,72,107,954902,72107954902
+"Census Tract 9550.01, Orocovis Municipio, Puerto Rico",327,72,107,955001,72107955001
+"Census Tract 9550.02, Orocovis Municipio, Puerto Rico",200,72,107,955002,72107955002
+"Census Tract 9551, Orocovis Municipio, Puerto Rico",209,72,107,955100,72107955100
+"Census Tract 2901, Patillas Municipio, Puerto Rico",205,72,109,290100,72109290100
+"Census Tract 2902, Patillas Municipio, Puerto Rico",217,72,109,290200,72109290200
+"Census Tract 2903, Patillas Municipio, Puerto Rico",301,72,109,290300,72109290300
+"Census Tract 2904, Patillas Municipio, Puerto Rico",222,72,109,290400,72109290400
+"Census Tract 9900, Patillas Municipio, Puerto Rico",0,72,109,990000,72109990000
+"Census Tract 7301, Pe?uelas Municipio, Puerto Rico",385,72,111,730100,72111730100
+"Census Tract 7302, Pe?uelas Municipio, Puerto Rico",266,72,111,730200,72111730200
+"Census Tract 7303, Pe?uelas Municipio, Puerto Rico",313,72,111,730300,72111730300
+"Census Tract 7304, Pe?uelas Municipio, Puerto Rico",267,72,111,730400,72111730400
+"Census Tract 7307, Pe?uelas Municipio, Puerto Rico",285,72,111,730700,72111730700
+"Census Tract 7308, Pe?uelas Municipio, Puerto Rico",200,72,111,730800,72111730800
+"Census Tract 9900, Pe?uelas Municipio, Puerto Rico",0,72,111,990000,72111990000
+"Census Tract 701, Ponce Municipio, Puerto Rico",332,72,113,070100,72113070100
+"Census Tract 702.01, Ponce Municipio, Puerto Rico",222,72,113,070201,72113070201
+"Census Tract 702.02, Ponce Municipio, Puerto Rico",162,72,113,070202,72113070202
+"Census Tract 703, Ponce Municipio, Puerto Rico",204,72,113,070300,72113070300
+"Census Tract 704, Ponce Municipio, Puerto Rico",166,72,113,070400,72113070400
+"Census Tract 705.02, Ponce Municipio, Puerto Rico",276,72,113,070502,72113070502
+"Census Tract 705.03, Ponce Municipio, Puerto Rico",310,72,113,070503,72113070503
+"Census Tract 705.13, Ponce Municipio, Puerto Rico",211,72,113,070513,72113070513
+"Census Tract 705.14, Ponce Municipio, Puerto Rico",214,72,113,070514,72113070514
+"Census Tract 705.22, Ponce Municipio, Puerto Rico",251,72,113,070522,72113070522
+"Census Tract 708, Ponce Municipio, Puerto Rico",177,72,113,070800,72113070800
+"Census Tract 709, Ponce Municipio, Puerto Rico",153,72,113,070900,72113070900
+"Census Tract 710, Ponce Municipio, Puerto Rico",186,72,113,071000,72113071000
+"Census Tract 712, Ponce Municipio, Puerto Rico",183,72,113,071200,72113071200
+"Census Tract 713, Ponce Municipio, Puerto Rico",262,72,113,071300,72113071300
+"Census Tract 714.01, Ponce Municipio, Puerto Rico",292,72,113,071401,72113071401
+"Census Tract 714.02, Ponce Municipio, Puerto Rico",330,72,113,071402,72113071402
+"Census Tract 715, Ponce Municipio, Puerto Rico",296,72,113,071500,72113071500
+"Census Tract 716.01, Ponce Municipio, Puerto Rico",202,72,113,071601,72113071601
+"Census Tract 716.02, Ponce Municipio, Puerto Rico",247,72,113,071602,72113071602
+"Census Tract 717, Ponce Municipio, Puerto Rico",164,72,113,071700,72113071700
+"Census Tract 718, Ponce Municipio, Puerto Rico",139,72,113,071800,72113071800
+"Census Tract 719, Ponce Municipio, Puerto Rico",336,72,113,071900,72113071900
+"Census Tract 720, Ponce Municipio, Puerto Rico",267,72,113,072000,72113072000
+"Census Tract 721.01, Ponce Municipio, Puerto Rico",209,72,113,072101,72113072101
+"Census Tract 721.02, Ponce Municipio, Puerto Rico",204,72,113,072102,72113072102
+"Census Tract 722.01, Ponce Municipio, Puerto Rico",275,72,113,072201,72113072201
+"Census Tract 722.02, Ponce Municipio, Puerto Rico",361,72,113,072202,72113072202
+"Census Tract 723, Ponce Municipio, Puerto Rico",152,72,113,072300,72113072300
+"Census Tract 724, Ponce Municipio, Puerto Rico",241,72,113,072400,72113072400
+"Census Tract 725, Ponce Municipio, Puerto Rico",274,72,113,072500,72113072500
+"Census Tract 726, Ponce Municipio, Puerto Rico",227,72,113,072600,72113072600
+"Census Tract 727.01, Ponce Municipio, Puerto Rico",298,72,113,072701,72113072701
+"Census Tract 727.03, Ponce Municipio, Puerto Rico",344,72,113,072703,72113072703
+"Census Tract 727.04, Ponce Municipio, Puerto Rico",239,72,113,072704,72113072704
+"Census Tract 729, Ponce Municipio, Puerto Rico",299,72,113,072900,72113072900
+"Census Tract 730.01, Ponce Municipio, Puerto Rico",227,72,113,073001,72113073001
+"Census Tract 730.02, Ponce Municipio, Puerto Rico",319,72,113,073002,72113073002
+"Census Tract 730.03, Ponce Municipio, Puerto Rico",229,72,113,073003,72113073003
+"Census Tract 730.04, Ponce Municipio, Puerto Rico",270,72,113,073004,72113073004
+"Census Tract 730.05, Ponce Municipio, Puerto Rico",267,72,113,073005,72113073005
+"Census Tract 730.06, Ponce Municipio, Puerto Rico",240,72,113,073006,72113073006
+"Census Tract 730.08, Ponce Municipio, Puerto Rico",597,72,113,073008,72113073008
+"Census Tract 730.09, Ponce Municipio, Puerto Rico",310,72,113,073009,72113073009
+"Census Tract 730.10, Ponce Municipio, Puerto Rico",277,72,113,073010,72113073010
+"Census Tract 9930, Ponce Municipio, Puerto Rico",0,72,113,993000,72113993000
+"Census Tract 3301, Quebradillas Municipio, Puerto Rico",278,72,115,330100,72115330100
+"Census Tract 3302, Quebradillas Municipio, Puerto Rico",237,72,115,330200,72115330200
+"Census Tract 3303, Quebradillas Municipio, Puerto Rico",366,72,115,330300,72115330300
+"Census Tract 3304, Quebradillas Municipio, Puerto Rico",221,72,115,330400,72115330400
+"Census Tract 9900, Quebradillas Municipio, Puerto Rico",0,72,115,990000,72115990000
+"Census Tract 9594, Rincon Municipio, Puerto Rico",347,72,117,959400,72117959400
+"Census Tract 9595, Rincon Municipio, Puerto Rico",204,72,117,959500,72117959500
+"Census Tract 9596, Rincon Municipio, Puerto Rico",279,72,117,959600,72117959600
+"Census Tract 9904, Rincon Municipio, Puerto Rico",0,72,117,990400,72117990400
+"Census Tract 1301.01, Rio Grande Municipio, Puerto Rico",206,72,119,130101,72119130101
+"Census Tract 1301.02, Rio Grande Municipio, Puerto Rico",329,72,119,130102,72119130102
+"Census Tract 1302, Rio Grande Municipio, Puerto Rico",251,72,119,130200,72119130200
+"Census Tract 1303, Rio Grande Municipio, Puerto Rico",271,72,119,130300,72119130300
+"Census Tract 1304.01, Rio Grande Municipio, Puerto Rico",204,72,119,130401,72119130401
+"Census Tract 1304.02, Rio Grande Municipio, Puerto Rico",350,72,119,130402,72119130402
+"Census Tract 1305, Rio Grande Municipio, Puerto Rico",259,72,119,130500,72119130500
+"Census Tract 1306.01, Rio Grande Municipio, Puerto Rico",217,72,119,130601,72119130601
+"Census Tract 1306.02, Rio Grande Municipio, Puerto Rico",429,72,119,130602,72119130602
+"Census Tract 1307.01, Rio Grande Municipio, Puerto Rico",289,72,119,130701,72119130701
+"Census Tract 1307.02, Rio Grande Municipio, Puerto Rico",337,72,119,130702,72119130702
+"Census Tract 9927, Rio Grande Municipio, Puerto Rico",0,72,119,992700,72119992700
+"Census Tract 9603, Sabana Grande Municipio, Puerto Rico",193,72,121,960300,72121960300
+"Census Tract 9604, Sabana Grande Municipio, Puerto Rico",260,72,121,960400,72121960400
+"Census Tract 9605, Sabana Grande Municipio, Puerto Rico",156,72,121,960500,72121960500
+"Census Tract 9606, Sabana Grande Municipio, Puerto Rico",289,72,121,960600,72121960600
+"Census Tract 9607, Sabana Grande Municipio, Puerto Rico",332,72,121,960700,72121960700
+"Census Tract 9608, Sabana Grande Municipio, Puerto Rico",221,72,121,960800,72121960800
+"Census Tract 9526, Salinas Municipio, Puerto Rico",200,72,123,952600,72123952600
+"Census Tract 9527, Salinas Municipio, Puerto Rico",227,72,123,952700,72123952700
+"Census Tract 9528, Salinas Municipio, Puerto Rico",264,72,123,952800,72123952800
+"Census Tract 9529, Salinas Municipio, Puerto Rico",367,72,123,952900,72123952900
+"Census Tract 9530, Salinas Municipio, Puerto Rico",172,72,123,953000,72123953000
+"Census Tract 9531, Salinas Municipio, Puerto Rico",255,72,123,953100,72123953100
+"Census Tract 9532, Salinas Municipio, Puerto Rico",270,72,123,953200,72123953200
+"Census Tract 9928, Salinas Municipio, Puerto Rico",0,72,123,992800,72123992800
+"Census Tract 8401, San German Municipio, Puerto Rico",260,72,125,840100,72125840100
+"Census Tract 8402, San German Municipio, Puerto Rico",266,72,125,840200,72125840200
+"Census Tract 8403, San German Municipio, Puerto Rico",303,72,125,840300,72125840300
+"Census Tract 8404, San German Municipio, Puerto Rico",241,72,125,840400,72125840400
+"Census Tract 8405, San German Municipio, Puerto Rico",411,72,125,840500,72125840500
+"Census Tract 8406, San German Municipio, Puerto Rico",280,72,125,840600,72125840600
+"Census Tract 8407, San German Municipio, Puerto Rico",292,72,125,840700,72125840700
+"Census Tract 4, San Juan Municipio, Puerto Rico",155,72,127,000400,72127000400
+"Census Tract 5.06, San Juan Municipio, Puerto Rico",122,72,127,000506,72127000506
+"Census Tract 6, San Juan Municipio, Puerto Rico",202,72,127,000600,72127000600
+"Census Tract 7, San Juan Municipio, Puerto Rico",270,72,127,000700,72127000700
+"Census Tract 9, San Juan Municipio, Puerto Rico",190,72,127,000900,72127000900
+"Census Tract 10, San Juan Municipio, Puerto Rico",207,72,127,001000,72127001000
+"Census Tract 11, San Juan Municipio, Puerto Rico",176,72,127,001100,72127001100
+"Census Tract 12, San Juan Municipio, Puerto Rico",139,72,127,001200,72127001200
+"Census Tract 13.01, San Juan Municipio, Puerto Rico",200,72,127,001301,72127001301
+"Census Tract 13.02, San Juan Municipio, Puerto Rico",315,72,127,001302,72127001302
+"Census Tract 14, San Juan Municipio, Puerto Rico",131,72,127,001400,72127001400
+"Census Tract 9563, Adjuntas Municipio, Puerto Rico",283,72,001,956300,72001956300
+"Census Tract 9564, Adjuntas Municipio, Puerto Rico",182,72,001,956400,72001956400
+"Census Tract 9565, Adjuntas Municipio, Puerto Rico",189,72,001,956500,72001956500
+"Census Tract 9566, Adjuntas Municipio, Puerto Rico",256,72,001,956600,72001956600
+"Census Tract 9567, Adjuntas Municipio, Puerto Rico",248,72,001,956700,72001956700
+"Census Tract 9568, Adjuntas Municipio, Puerto Rico",298,72,001,956800,72001956800
+"Census Tract 4301, Aguada Municipio, Puerto Rico",275,72,003,430100,72003430100
+"Census Tract 4302, Aguada Municipio, Puerto Rico",236,72,003,430200,72003430200
+"Census Tract 4303, Aguada Municipio, Puerto Rico",152,72,003,430300,72003430300
+"Census Tract 4304.01, Aguada Municipio, Puerto Rico",313,72,003,430401,72003430401
+"Census Tract 4304.02, Aguada Municipio, Puerto Rico",274,72,003,430402,72003430402
+"Census Tract 4305.01, Aguada Municipio, Puerto Rico",197,72,003,430501,72003430501
+"Census Tract 4305.02, Aguada Municipio, Puerto Rico",315,72,003,430502,72003430502
+"Census Tract 4306.01, Aguada Municipio, Puerto Rico",227,72,003,430601,72003430601
+"Census Tract 4306.02, Aguada Municipio, Puerto Rico",211,72,003,430602,72003430602
+"Census Tract 9900, Aguada Municipio, Puerto Rico",0,72,003,990000,72003990000
+"Census Tract 4001, Aguadilla Municipio, Puerto Rico",179,72,005,400100,72005400100
+"Census Tract 4003, Aguadilla Municipio, Puerto Rico",269,72,005,400300,72005400300
+"Census Tract 4004, Aguadilla Municipio, Puerto Rico",282,72,005,400400,72005400400
+"Census Tract 4005.01, Aguadilla Municipio, Puerto Rico",282,72,005,400501,72005400501
+"Census Tract 4005.02, Aguadilla Municipio, Puerto Rico",259,72,005,400502,72005400502
+"Census Tract 4006, Aguadilla Municipio, Puerto Rico",208,72,005,400600,72005400600
+"Census Tract 4007, Aguadilla Municipio, Puerto Rico",192,72,005,400700,72005400700
+"Census Tract 4008, Aguadilla Municipio, Puerto Rico",153,72,005,400800,72005400800
+"Census Tract 4009, Aguadilla Municipio, Puerto Rico",157,72,005,400900,72005400900
+"Census Tract 15, San Juan Municipio, Puerto Rico",156,72,127,001500,72127001500
+"Census Tract 16, San Juan Municipio, Puerto Rico",163,72,127,001600,72127001600
+"Census Tract 18, San Juan Municipio, Puerto Rico",138,72,127,001800,72127001800
+"Census Tract 19, San Juan Municipio, Puerto Rico",274,72,127,001900,72127001900
+"Census Tract 20.02, San Juan Municipio, Puerto Rico",142,72,127,002002,72127002002
+"Census Tract 21, San Juan Municipio, Puerto Rico",97,72,127,002100,72127002100
+"Census Tract 22, San Juan Municipio, Puerto Rico",162,72,127,002200,72127002200
+"Census Tract 23, San Juan Municipio, Puerto Rico",123,72,127,002300,72127002300
+"Census Tract 24, San Juan Municipio, Puerto Rico",293,72,127,002400,72127002400
+"Census Tract 25, San Juan Municipio, Puerto Rico",165,72,127,002500,72127002500
+"Census Tract 26, San Juan Municipio, Puerto Rico",138,72,127,002600,72127002600
+"Census Tract 28, San Juan Municipio, Puerto Rico",151,72,127,002800,72127002800
+"Census Tract 29, San Juan Municipio, Puerto Rico",161,72,127,002900,72127002900
+"Census Tract 30, San Juan Municipio, Puerto Rico",170,72,127,003000,72127003000
+"Census Tract 31, San Juan Municipio, Puerto Rico",161,72,127,003100,72127003100
+"Census Tract 32, San Juan Municipio, Puerto Rico",211,72,127,003200,72127003200
+"Census Tract 33, San Juan Municipio, Puerto Rico",156,72,127,003300,72127003300
+"Census Tract 34, San Juan Municipio, Puerto Rico",219,72,127,003400,72127003400
+"Census Tract 35.01, San Juan Municipio, Puerto Rico",297,72,127,003501,72127003501
+"Census Tract 35.02, San Juan Municipio, Puerto Rico",150,72,127,003502,72127003502
+"Census Tract 36, San Juan Municipio, Puerto Rico",108,72,127,003600,72127003600
+"Census Tract 37, San Juan Municipio, Puerto Rico",284,72,127,003700,72127003700
+"Census Tract 38, San Juan Municipio, Puerto Rico",162,72,127,003800,72127003800
+"Census Tract 39.02, San Juan Municipio, Puerto Rico",242,72,127,003902,72127003902
+"Census Tract 42, San Juan Municipio, Puerto Rico",246,72,127,004200,72127004200
+"Census Tract 43.06, San Juan Municipio, Puerto Rico",159,72,127,004306,72127004306
+"Census Tract 44, San Juan Municipio, Puerto Rico",185,72,127,004400,72127004400
+"Census Tract 45, San Juan Municipio, Puerto Rico",222,72,127,004500,72127004500
+"Census Tract 46, San Juan Municipio, Puerto Rico",287,72,127,004600,72127004600
+"Census Tract 47, San Juan Municipio, Puerto Rico",191,72,127,004700,72127004700
+"Census Tract 48, San Juan Municipio, Puerto Rico",190,72,127,004800,72127004800
+"Census Tract 49, San Juan Municipio, Puerto Rico",198,72,127,004900,72127004900
+"Census Tract 50, San Juan Municipio, Puerto Rico",339,72,127,005000,72127005000
+"Census Tract 51.01, San Juan Municipio, Puerto Rico",245,72,127,005101,72127005101
+"Census Tract 51.02, San Juan Municipio, Puerto Rico",258,72,127,005102,72127005102
+"Census Tract 51.03, San Juan Municipio, Puerto Rico",228,72,127,005103,72127005103
+"Census Tract 52.01, San Juan Municipio, Puerto Rico",212,72,127,005201,72127005201
+"Census Tract 52.02, San Juan Municipio, Puerto Rico",205,72,127,005202,72127005202
+"Census Tract 52.04, San Juan Municipio, Puerto Rico",227,72,127,005204,72127005204
+"Census Tract 52.14, San Juan Municipio, Puerto Rico",274,72,127,005214,72127005214
+"Census Tract 52.15, San Juan Municipio, Puerto Rico",159,72,127,005215,72127005215
+"Census Tract 53, San Juan Municipio, Puerto Rico",206,72,127,005300,72127005300
+"Census Tract 54.01, San Juan Municipio, Puerto Rico",377,72,127,005401,72127005401
+"Census Tract 54.02, San Juan Municipio, Puerto Rico",173,72,127,005402,72127005402
+"Census Tract 54.03, San Juan Municipio, Puerto Rico",257,72,127,005403,72127005403
+"Census Tract 4010, Aguadilla Municipio, Puerto Rico",166,72,005,401000,72005401000
+"Census Tract 4011, Aguadilla Municipio, Puerto Rico",156,72,005,401100,72005401100
+"Census Tract 4012, Aguadilla Municipio, Puerto Rico",244,72,005,401200,72005401200
+"Census Tract 4013.01, Aguadilla Municipio, Puerto Rico",330,72,005,401301,72005401301
+"Census Tract 4013.02, Aguadilla Municipio, Puerto Rico",243,72,005,401302,72005401302
+"Census Tract 4014.01, Aguadilla Municipio, Puerto Rico",622,72,005,401401,72005401401
+"Census Tract 4014.02, Aguadilla Municipio, Puerto Rico",284,72,005,401402,72005401402
+"Census Tract 9900, Aguadilla Municipio, Puerto Rico",0,72,005,990000,72005990000
+"Census Tract 2301, Aguas Buenas Municipio, Puerto Rico",209,72,007,230100,72007230100
+"Census Tract 2302, Aguas Buenas Municipio, Puerto Rico",235,72,007,230200,72007230200
+"Census Tract 2303, Aguas Buenas Municipio, Puerto Rico",170,72,007,230300,72007230300
+"Census Tract 2304, Aguas Buenas Municipio, Puerto Rico",298,72,007,230400,72007230400
+"Census Tract 2305.01, Aguas Buenas Municipio, Puerto Rico",239,72,007,230501,72007230501
+"Census Tract 2305.02, Aguas Buenas Municipio, Puerto Rico",255,72,007,230502,72007230502
+"Census Tract 2501, Aibonito Municipio, Puerto Rico",208,72,009,250100,72009250100
+"Census Tract 2502, Aibonito Municipio, Puerto Rico",324,72,009,250200,72009250200
+"Census Tract 2503, Aibonito Municipio, Puerto Rico",225,72,009,250300,72009250300
+"Census Tract 2504, Aibonito Municipio, Puerto Rico",175,72,009,250400,72009250400
+"Census Tract 2505, Aibonito Municipio, Puerto Rico",330,72,009,250500,72009250500
+"Census Tract 2506, Aibonito Municipio, Puerto Rico",255,72,009,250600,72009250600
+"Census Tract 8101, A?asco Municipio, Puerto Rico",247,72,011,810100,72011810100
+"Census Tract 8102, A?asco Municipio, Puerto Rico",291,72,011,810200,72011810200
+"Census Tract 8103, A?asco Municipio, Puerto Rico",271,72,011,810300,72011810300
+"Census Tract 8104, A?asco Municipio, Puerto Rico",118,72,011,810400,72011810400
+"Census Tract 8105, A?asco Municipio, Puerto Rico",216,72,011,810500,72011810500
+"Census Tract 8106, A?asco Municipio, Puerto Rico",255,72,011,810600,72011810600
+"Census Tract 8107, A?asco Municipio, Puerto Rico",276,72,011,810700,72011810700
+"Census Tract 9900, A?asco Municipio, Puerto Rico",0,72,011,990000,72011990000
+"Census Tract 3001.01, Arecibo Municipio, Puerto Rico",313,72,013,300101,72013300101
+"Census Tract 3001.02, Arecibo Municipio, Puerto Rico",330,72,013,300102,72013300102
+"Census Tract 3002, Arecibo Municipio, Puerto Rico",239,72,013,300200,72013300200
+"Census Tract 3003.01, Arecibo Municipio, Puerto Rico",211,72,013,300301,72013300301
+"Census Tract 3003.02, Arecibo Municipio, Puerto Rico",202,72,013,300302,72013300302
+"Census Tract 3004, Arecibo Municipio, Puerto Rico",165,72,013,300400,72013300400
+"Census Tract 3005, Arecibo Municipio, Puerto Rico",142,72,013,300500,72013300500
+"Census Tract 3007, Arecibo Municipio, Puerto Rico",166,72,013,300700,72013300700
+"Census Tract 3008, Arecibo Municipio, Puerto Rico",222,72,013,300800,72013300800
+"Census Tract 3010, Arecibo Municipio, Puerto Rico",230,72,013,301000,72013301000
+"Census Tract 3011, Arecibo Municipio, Puerto Rico",294,72,013,301100,72013301100
+"Census Tract 3012, Arecibo Municipio, Puerto Rico",249,72,013,301200,72013301200
+"Census Tract 3013, Arecibo Municipio, Puerto Rico",239,72,013,301300,72013301300
+"Census Tract 3014, Arecibo Municipio, Puerto Rico",147,72,013,301400,72013301400
+"Census Tract 3015, Arecibo Municipio, Puerto Rico",228,72,013,301500,72013301500
+"Census Tract 3016, Arecibo Municipio, Puerto Rico",277,72,013,301600,72013301600
+"Census Tract 55, San Juan Municipio, Puerto Rico",223,72,127,005500,72127005500
+"Census Tract 56.01, San Juan Municipio, Puerto Rico",255,72,127,005601,72127005601
+"Census Tract 56.02, San Juan Municipio, Puerto Rico",301,72,127,005602,72127005602
+"Census Tract 58, San Juan Municipio, Puerto Rico",214,72,127,005800,72127005800
+"Census Tract 59, San Juan Municipio, Puerto Rico",187,72,127,005900,72127005900
+"Census Tract 60, San Juan Municipio, Puerto Rico",206,72,127,006000,72127006000
+"Census Tract 61.01, San Juan Municipio, Puerto Rico",173,72,127,006101,72127006101
+"Census Tract 61.02, San Juan Municipio, Puerto Rico",186,72,127,006102,72127006102
+"Census Tract 62, San Juan Municipio, Puerto Rico",230,72,127,006200,72127006200
+"Census Tract 63, San Juan Municipio, Puerto Rico",207,72,127,006300,72127006300
+"Census Tract 65, San Juan Municipio, Puerto Rico",219,72,127,006500,72127006500
+"Census Tract 66, San Juan Municipio, Puerto Rico",201,72,127,006600,72127006600
+"Census Tract 67, San Juan Municipio, Puerto Rico",178,72,127,006700,72127006700
+"Census Tract 68, San Juan Municipio, Puerto Rico",190,72,127,006800,72127006800
+"Census Tract 69, San Juan Municipio, Puerto Rico",243,72,127,006900,72127006900
+"Census Tract 70.04, San Juan Municipio, Puerto Rico",140,72,127,007004,72127007004
+"Census Tract 71, San Juan Municipio, Puerto Rico",311,72,127,007100,72127007100
+"Census Tract 73, San Juan Municipio, Puerto Rico",261,72,127,007300,72127007300
+"Census Tract 74, San Juan Municipio, Puerto Rico",223,72,127,007400,72127007400
+"Census Tract 75, San Juan Municipio, Puerto Rico",232,72,127,007500,72127007500
+"Census Tract 76, San Juan Municipio, Puerto Rico",162,72,127,007600,72127007600
+"Census Tract 77, San Juan Municipio, Puerto Rico",196,72,127,007700,72127007700
+"Census Tract 78, San Juan Municipio, Puerto Rico",216,72,127,007800,72127007800
+"Census Tract 79, San Juan Municipio, Puerto Rico",209,72,127,007900,72127007900
+"Census Tract 80.01, San Juan Municipio, Puerto Rico",268,72,127,008001,72127008001
+"Census Tract 80.02, San Juan Municipio, Puerto Rico",326,72,127,008002,72127008002
+"Census Tract 81, San Juan Municipio, Puerto Rico",215,72,127,008100,72127008100
+"Census Tract 82.01, San Juan Municipio, Puerto Rico",142,72,127,008201,72127008201
+"Census Tract 82.02, San Juan Municipio, Puerto Rico",151,72,127,008202,72127008202
+"Census Tract 83, San Juan Municipio, Puerto Rico",160,72,127,008300,72127008300
+"Census Tract 84, San Juan Municipio, Puerto Rico",309,72,127,008400,72127008400
+"Census Tract 85, San Juan Municipio, Puerto Rico",299,72,127,008500,72127008500
+"Census Tract 86.01, San Juan Municipio, Puerto Rico",168,72,127,008601,72127008601
+"Census Tract 86.02, San Juan Municipio, Puerto Rico",304,72,127,008602,72127008602
+"Census Tract 86.03, San Juan Municipio, Puerto Rico",211,72,127,008603,72127008603
+"Census Tract 87, San Juan Municipio, Puerto Rico",169,72,127,008700,72127008700
+"Census Tract 89, San Juan Municipio, Puerto Rico",149,72,127,008900,72127008900
+"Census Tract 90, San Juan Municipio, Puerto Rico",241,72,127,009000,72127009000
+"Census Tract 91.11, San Juan Municipio, Puerto Rico",238,72,127,009111,72127009111
+"Census Tract 91.12, San Juan Municipio, Puerto Rico",255,72,127,009112,72127009112
+"Census Tract 91.21, San Juan Municipio, Puerto Rico",308,72,127,009121,72127009121
+"Census Tract 91.22, San Juan Municipio, Puerto Rico",272,72,127,009122,72127009122
+"Census Tract 91.23, San Juan Municipio, Puerto Rico",316,72,127,009123,72127009123
+"Census Tract 93, San Juan Municipio, Puerto Rico",233,72,127,009300,72127009300
+"Census Tract 94, San Juan Municipio, Puerto Rico",224,72,127,009400,72127009400
+"Census Tract 3017, Arecibo Municipio, Puerto Rico",291,72,013,301700,72013301700
+"Census Tract 3018, Arecibo Municipio, Puerto Rico",135,72,013,301800,72013301800
+"Census Tract 3019, Arecibo Municipio, Puerto Rico",398,72,013,301900,72013301900
+"Census Tract 3020, Arecibo Municipio, Puerto Rico",181,72,013,302000,72013302000
+"Census Tract 3021, Arecibo Municipio, Puerto Rico",203,72,013,302100,72013302100
+"Census Tract 3022.01, Arecibo Municipio, Puerto Rico",291,72,013,302201,72013302201
+"Census Tract 3022.02, Arecibo Municipio, Puerto Rico",303,72,013,302202,72013302202
+"Census Tract 3023, Arecibo Municipio, Puerto Rico",467,72,013,302300,72013302300
+"Census Tract 9929, Arecibo Municipio, Puerto Rico",0,72,013,992900,72013992900
+"Census Tract 2801.01, Arroyo Municipio, Puerto Rico",255,72,015,280101,72015280101
+"Census Tract 2801.02, Arroyo Municipio, Puerto Rico",231,72,015,280102,72015280102
+"Census Tract 2802.01, Arroyo Municipio, Puerto Rico",296,72,015,280201,72015280201
+"Census Tract 2802.02, Arroyo Municipio, Puerto Rico",180,72,015,280202,72015280202
+"Census Tract 9915, Arroyo Municipio, Puerto Rico",0,72,015,991500,72015991500
+"Census Tract 5901, Barceloneta Municipio, Puerto Rico",233,72,017,590100,72017590100
+"Census Tract 5902, Barceloneta Municipio, Puerto Rico",203,72,017,590200,72017590200
+"Census Tract 5903, Barceloneta Municipio, Puerto Rico",292,72,017,590300,72017590300
+"Census Tract 5904, Barceloneta Municipio, Puerto Rico",212,72,017,590400,72017590400
+"Census Tract 9900, Barceloneta Municipio, Puerto Rico",0,72,017,990000,72017990000
+"Census Tract 9522.01, Barranquitas Municipio, Puerto Rico",340,72,019,952201,72019952201
+"Census Tract 9522.02, Barranquitas Municipio, Puerto Rico",341,72,019,952202,72019952202
+"Census Tract 9523.01, Barranquitas Municipio, Puerto Rico",231,72,019,952301,72019952301
+"Census Tract 9523.02, Barranquitas Municipio, Puerto Rico",228,72,019,952302,72019952302
+"Census Tract 9524, Barranquitas Municipio, Puerto Rico",129,72,019,952400,72019952400
+"Census Tract 9525, Barranquitas Municipio, Puerto Rico",255,72,019,952500,72019952500
+"Census Tract 301.01, Bayamon Municipio, Puerto Rico",1297,72,021,030101,72021030101
+"Census Tract 301.03, Bayamon Municipio, Puerto Rico",208,72,021,030103,72021030103
+"Census Tract 301.04, Bayamon Municipio, Puerto Rico",319,72,021,030104,72021030104
+"Census Tract 301.05, Bayamon Municipio, Puerto Rico",189,72,021,030105,72021030105
+"Census Tract 302, Bayamon Municipio, Puerto Rico",270,72,021,030200,72021030200
+"Census Tract 303, Bayamon Municipio, Puerto Rico",166,72,021,030300,72021030300
+"Census Tract 307, Bayamon Municipio, Puerto Rico",146,72,021,030700,72021030700
+"Census Tract 308, Bayamon Municipio, Puerto Rico",132,72,021,030800,72021030800
+"Census Tract 309.01, Bayamon Municipio, Puerto Rico",258,72,021,030901,72021030901
+"Census Tract 309.02, Bayamon Municipio, Puerto Rico",307,72,021,030902,72021030902
+"Census Tract 309.03, Bayamon Municipio, Puerto Rico",226,72,021,030903,72021030903
+"Census Tract 309.04, Bayamon Municipio, Puerto Rico",294,72,021,030904,72021030904
+"Census Tract 310.04, Bayamon Municipio, Puerto Rico",232,72,021,031004,72021031004
+"Census Tract 310.05, Bayamon Municipio, Puerto Rico",231,72,021,031005,72021031005
+"Census Tract 310.11, Bayamon Municipio, Puerto Rico",309,72,021,031011,72021031011
+"Census Tract 310.13, Bayamon Municipio, Puerto Rico",370,72,021,031013,72021031013
+"Census Tract 310.21, Bayamon Municipio, Puerto Rico",257,72,021,031021,72021031021
+"Census Tract 310.23, Bayamon Municipio, Puerto Rico",236,72,021,031023,72021031023
+"Census Tract 310.31, Bayamon Municipio, Puerto Rico",328,72,021,031031,72021031031
+"Census Tract 96.01, San Juan Municipio, Puerto Rico",187,72,127,009601,72127009601
+"Census Tract 96.02, San Juan Municipio, Puerto Rico",232,72,127,009602,72127009602
+"Census Tract 96.03, San Juan Municipio, Puerto Rico",187,72,127,009603,72127009603
+"Census Tract 96.14, San Juan Municipio, Puerto Rico",232,72,127,009614,72127009614
+"Census Tract 96.24, San Juan Municipio, Puerto Rico",322,72,127,009624,72127009624
+"Census Tract 98, San Juan Municipio, Puerto Rico",233,72,127,009800,72127009800
+"Census Tract 99.01, San Juan Municipio, Puerto Rico",283,72,127,009901,72127009901
+"Census Tract 99.02, San Juan Municipio, Puerto Rico",347,72,127,009902,72127009902
+"Census Tract 99.03, San Juan Municipio, Puerto Rico",315,72,127,009903,72127009903
+"Census Tract 99.04, San Juan Municipio, Puerto Rico",303,72,127,009904,72127009904
+"Census Tract 100.01, San Juan Municipio, Puerto Rico",264,72,127,010001,72127010001
+"Census Tract 100.02, San Juan Municipio, Puerto Rico",234,72,127,010002,72127010002
+"Census Tract 100.12, San Juan Municipio, Puerto Rico",236,72,127,010012,72127010012
+"Census Tract 100.22, San Juan Municipio, Puerto Rico",233,72,127,010022,72127010022
+"Census Tract 100.32, San Juan Municipio, Puerto Rico",216,72,127,010032,72127010032
+"Census Tract 100.42, San Juan Municipio, Puerto Rico",327,72,127,010042,72127010042
+"Census Tract 101, San Juan Municipio, Puerto Rico",370,72,127,010100,72127010100
+"Census Tract 102, San Juan Municipio, Puerto Rico",260,72,127,010200,72127010200
+"Census Tract 105, San Juan Municipio, Puerto Rico",149,72,127,010500,72127010500
+"Census Tract 9800, San Juan Municipio, Puerto Rico",,72,127,980000,72127980000
+"Census Tract 9801.01, San Juan Municipio, Puerto Rico",0,72,127,980101,72127980101
+"Census Tract 9801.02, San Juan Municipio, Puerto Rico",0,72,127,980102,72127980102
+"Census Tract 9801.03, San Juan Municipio, Puerto Rico",185,72,127,980103,72127980103
+"Census Tract 9801.04, San Juan Municipio, Puerto Rico",0,72,127,980104,72127980104
+"Census Tract 9801.05, San Juan Municipio, Puerto Rico",0,72,127,980105,72127980105
+"Census Tract 9801.07, San Juan Municipio, Puerto Rico",0,72,127,980107,72127980107
+"Census Tract 9801.08, San Juan Municipio, Puerto Rico",0,72,127,980108,72127980108
+"Census Tract 9802, San Juan Municipio, Puerto Rico",9,72,127,980200,72127980200
+"Census Tract 9803, San Juan Municipio, Puerto Rico",0,72,127,980300,72127980300
+"Census Tract 9900, San Juan Municipio, Puerto Rico",0,72,127,990000,72127990000
+"Census Tract 2201, San Lorenzo Municipio, Puerto Rico",285,72,129,220100,72129220100
+"Census Tract 2202, San Lorenzo Municipio, Puerto Rico",243,72,129,220200,72129220200
+"Census Tract 2203, San Lorenzo Municipio, Puerto Rico",186,72,129,220300,72129220300
+"Census Tract 2204.01, San Lorenzo Municipio, Puerto Rico",317,72,129,220401,72129220401
+"Census Tract 2204.02, San Lorenzo Municipio, Puerto Rico",341,72,129,220402,72129220402
+"Census Tract 2205.01, San Lorenzo Municipio, Puerto Rico",224,72,129,220501,72129220501
+"Census Tract 2205.02, San Lorenzo Municipio, Puerto Rico",279,72,129,220502,72129220502
+"Census Tract 2206, San Lorenzo Municipio, Puerto Rico",177,72,129,220600,72129220600
+"Census Tract 2207, San Lorenzo Municipio, Puerto Rico",195,72,129,220700,72129220700
+"Census Tract 92, San Sebastian Municipio, Puerto Rico",129,72,131,009200,72131009200
+"Census Tract 9585, San Sebastian Municipio, Puerto Rico",280,72,131,958500,72131958500
+"Census Tract 9587, San Sebastian Municipio, Puerto Rico",197,72,131,958700,72131958700
+"Census Tract 9588, San Sebastian Municipio, Puerto Rico",260,72,131,958800,72131958800
+"Census Tract 9589, San Sebastian Municipio, Puerto Rico",195,72,131,958900,72131958900
+"Census Tract 310.32, Bayamon Municipio, Puerto Rico",282,72,021,031032,72021031032
+"Census Tract 310.33, Bayamon Municipio, Puerto Rico",307,72,021,031033,72021031033
+"Census Tract 311.01, Bayamon Municipio, Puerto Rico",196,72,021,031101,72021031101
+"Census Tract 311.13, Bayamon Municipio, Puerto Rico",318,72,021,031113,72021031113
+"Census Tract 311.14, Bayamon Municipio, Puerto Rico",219,72,021,031114,72021031114
+"Census Tract 311.21, Bayamon Municipio, Puerto Rico",243,72,021,031121,72021031121
+"Census Tract 311.22, Bayamon Municipio, Puerto Rico",238,72,021,031122,72021031122
+"Census Tract 311.23, Bayamon Municipio, Puerto Rico",218,72,021,031123,72021031123
+"Census Tract 311.24, Bayamon Municipio, Puerto Rico",203,72,021,031124,72021031124
+"Census Tract 311.25, Bayamon Municipio, Puerto Rico",200,72,021,031125,72021031125
+"Census Tract 312.01, Bayamon Municipio, Puerto Rico",220,72,021,031201,72021031201
+"Census Tract 312.02, Bayamon Municipio, Puerto Rico",271,72,021,031202,72021031202
+"Census Tract 312.03, Bayamon Municipio, Puerto Rico",242,72,021,031203,72021031203
+"Census Tract 313.01, Bayamon Municipio, Puerto Rico",229,72,021,031301,72021031301
+"Census Tract 313.04, Bayamon Municipio, Puerto Rico",243,72,021,031304,72021031304
+"Census Tract 313.05, Bayamon Municipio, Puerto Rico",338,72,021,031305,72021031305
+"Census Tract 313.06, Bayamon Municipio, Puerto Rico",252,72,021,031306,72021031306
+"Census Tract 313.07, Bayamon Municipio, Puerto Rico",290,72,021,031307,72021031307
+"Census Tract 314.01, Bayamon Municipio, Puerto Rico",221,72,021,031401,72021031401
+"Census Tract 314.02, Bayamon Municipio, Puerto Rico",198,72,021,031402,72021031402
+"Census Tract 314.03, Bayamon Municipio, Puerto Rico",195,72,021,031403,72021031403
+"Census Tract 315.01, Bayamon Municipio, Puerto Rico",192,72,021,031501,72021031501
+"Census Tract 315.02, Bayamon Municipio, Puerto Rico",247,72,021,031502,72021031502
+"Census Tract 315.03, Bayamon Municipio, Puerto Rico",279,72,021,031503,72021031503
+"Census Tract 316.11, Bayamon Municipio, Puerto Rico",180,72,021,031611,72021031611
+"Census Tract 316.12, Bayamon Municipio, Puerto Rico",379,72,021,031612,72021031612
+"Census Tract 316.21, Bayamon Municipio, Puerto Rico",149,72,021,031621,72021031621
+"Census Tract 316.22, Bayamon Municipio, Puerto Rico",239,72,021,031622,72021031622
+"Census Tract 316.31, Bayamon Municipio, Puerto Rico",324,72,021,031631,72021031631
+"Census Tract 316.32, Bayamon Municipio, Puerto Rico",307,72,021,031632,72021031632
+"Census Tract 316.41, Bayamon Municipio, Puerto Rico",271,72,021,031641,72021031641
+"Census Tract 316.51, Bayamon Municipio, Puerto Rico",217,72,021,031651,72021031651
+"Census Tract 317.01, Bayamon Municipio, Puerto Rico",292,72,021,031701,72021031701
+"Census Tract 317.02, Bayamon Municipio, Puerto Rico",329,72,021,031702,72021031702
+"Census Tract 317.03, Bayamon Municipio, Puerto Rico",252,72,021,031703,72021031703
+"Census Tract 317.04, Bayamon Municipio, Puerto Rico",210,72,021,031704,72021031704
+"Census Tract 318, Bayamon Municipio, Puerto Rico",305,72,021,031800,72021031800
+"Census Tract 319, Bayamon Municipio, Puerto Rico",203,72,021,031900,72021031900
+"Census Tract 320, Bayamon Municipio, Puerto Rico",134,72,021,032000,72021032000
+"Census Tract 321, Bayamon Municipio, Puerto Rico",247,72,021,032100,72021032100
+"Census Tract 322, Bayamon Municipio, Puerto Rico",259,72,021,032200,72021032200
+"Census Tract 323.01, Bayamon Municipio, Puerto Rico",205,72,021,032301,72021032301
+"Census Tract 323.02, Bayamon Municipio, Puerto Rico",217,72,021,032302,72021032302
+"Census Tract 8301.01, Cabo Rojo Municipio, Puerto Rico",327,72,023,830101,72023830101
+"Census Tract 9590, San Sebastian Municipio, Puerto Rico",278,72,131,959000,72131959000
+"Census Tract 9592, San Sebastian Municipio, Puerto Rico",191,72,131,959200,72131959200
+"Census Tract 9593, San Sebastian Municipio, Puerto Rico",265,72,131,959300,72131959300
+"Census Tract 9595, San Sebastian Municipio, Puerto Rico",196,72,131,959500,72131959500
+"Census Tract 9533, Santa Isabel Municipio, Puerto Rico",264,72,133,953300,72133953300
+"Census Tract 9535, Santa Isabel Municipio, Puerto Rico",258,72,133,953500,72133953500
+"Census Tract 9536, Santa Isabel Municipio, Puerto Rico",207,72,133,953600,72133953600
+"Census Tract 9537, Santa Isabel Municipio, Puerto Rico",254,72,133,953700,72133953700
+"Census Tract 9538, Santa Isabel Municipio, Puerto Rico",194,72,133,953800,72133953800
+"Census Tract 9900, Santa Isabel Municipio, Puerto Rico",0,72,133,990000,72133990000
+"Census Tract 5101.01, Toa Alta Municipio, Puerto Rico",323,72,135,510101,72135510101
+"Census Tract 5101.02, Toa Alta Municipio, Puerto Rico",278,72,135,510102,72135510102
+"Census Tract 5102, Toa Alta Municipio, Puerto Rico",335,72,135,510200,72135510200
+"Census Tract 5103, Toa Alta Municipio, Puerto Rico",200,72,135,510300,72135510300
+"Census Tract 5104, Toa Alta Municipio, Puerto Rico",314,72,135,510400,72135510400
+"Census Tract 5105.02, Toa Alta Municipio, Puerto Rico",332,72,135,510502,72135510502
+"Census Tract 5105.03, Toa Alta Municipio, Puerto Rico",345,72,135,510503,72135510503
+"Census Tract 5105.04, Toa Alta Municipio, Puerto Rico",311,72,135,510504,72135510504
+"Census Tract 5105.05, Toa Alta Municipio, Puerto Rico",285,72,135,510505,72135510505
+"Census Tract 5106.01, Toa Alta Municipio, Puerto Rico",291,72,135,510601,72135510601
+"Census Tract 5106.02, Toa Alta Municipio, Puerto Rico",252,72,135,510602,72135510602
+"Census Tract 5107.01, Toa Alta Municipio, Puerto Rico",226,72,135,510701,72135510701
+"Census Tract 5107.02, Toa Alta Municipio, Puerto Rico",303,72,135,510702,72135510702
+"Census Tract 1202, Toa Baja Municipio, Puerto Rico",234,72,137,120200,72137120200
+"Census Tract 1203, Toa Baja Municipio, Puerto Rico",161,72,137,120300,72137120300
+"Census Tract 1204, Toa Baja Municipio, Puerto Rico",166,72,137,120400,72137120400
+"Census Tract 1205, Toa Baja Municipio, Puerto Rico",173,72,137,120500,72137120500
+"Census Tract 1206, Toa Baja Municipio, Puerto Rico",225,72,137,120600,72137120600
+"Census Tract 1207, Toa Baja Municipio, Puerto Rico",128,72,137,120700,72137120700
+"Census Tract 1208, Toa Baja Municipio, Puerto Rico",286,72,137,120800,72137120800
+"Census Tract 1209, Toa Baja Municipio, Puerto Rico",289,72,137,120900,72137120900
+"Census Tract 1210.01, Toa Baja Municipio, Puerto Rico",247,72,137,121001,72137121001
+"Census Tract 1210.02, Toa Baja Municipio, Puerto Rico",255,72,137,121002,72137121002
+"Census Tract 1211, Toa Baja Municipio, Puerto Rico",200,72,137,121100,72137121100
+"Census Tract 1212, Toa Baja Municipio, Puerto Rico",210,72,137,121200,72137121200
+"Census Tract 1213, Toa Baja Municipio, Puerto Rico",177,72,137,121300,72137121300
+"Census Tract 1214, Toa Baja Municipio, Puerto Rico",193,72,137,121400,72137121400
+"Census Tract 1217.01, Toa Baja Municipio, Puerto Rico",265,72,137,121701,72137121701
+"Census Tract 1217.02, Toa Baja Municipio, Puerto Rico",187,72,137,121702,72137121702
+"Census Tract 1218.01, Toa Baja Municipio, Puerto Rico",181,72,137,121801,72137121801
+"Census Tract 1218.02, Toa Baja Municipio, Puerto Rico",201,72,137,121802,72137121802
+"Census Tract 1219, Toa Baja Municipio, Puerto Rico",202,72,137,121900,72137121900
+"Census Tract 1220.01, Toa Baja Municipio, Puerto Rico",317,72,137,122001,72137122001
+"Census Tract 1220.02, Toa Baja Municipio, Puerto Rico",269,72,137,122002,72137122002
+"Census Tract 8301.02, Cabo Rojo Municipio, Puerto Rico",355,72,023,830102,72023830102
+"Census Tract 8302, Cabo Rojo Municipio, Puerto Rico",258,72,023,830200,72023830200
+"Census Tract 8303, Cabo Rojo Municipio, Puerto Rico",171,72,023,830300,72023830300
+"Census Tract 8304, Cabo Rojo Municipio, Puerto Rico",211,72,023,830400,72023830400
+"Census Tract 8305.02, Cabo Rojo Municipio, Puerto Rico",242,72,023,830502,72023830502
+"Census Tract 8305.03, Cabo Rojo Municipio, Puerto Rico",183,72,023,830503,72023830503
+"Census Tract 8305.04, Cabo Rojo Municipio, Puerto Rico",223,72,023,830504,72023830504
+"Census Tract 8306.03, Cabo Rojo Municipio, Puerto Rico",357,72,023,830603,72023830603
+"Census Tract 8306.04, Cabo Rojo Municipio, Puerto Rico",150,72,023,830604,72023830604
+"Census Tract 9800, Cabo Rojo Municipio, Puerto Rico",0,72,023,980000,72023980000
+"Census Tract 9900, Cabo Rojo Municipio, Puerto Rico",0,72,023,990000,72023990000
+"Census Tract 2001, Caguas Municipio, Puerto Rico",317,72,025,200100,72025200100
+"Census Tract 2002, Caguas Municipio, Puerto Rico",244,72,025,200200,72025200200
+"Census Tract 2003.02, Caguas Municipio, Puerto Rico",310,72,025,200302,72025200302
+"Census Tract 2003.03, Caguas Municipio, Puerto Rico",370,72,025,200303,72025200303
+"Census Tract 2003.04, Caguas Municipio, Puerto Rico",247,72,025,200304,72025200304
+"Census Tract 2004, Caguas Municipio, Puerto Rico",249,72,025,200400,72025200400
+"Census Tract 2005, Caguas Municipio, Puerto Rico",244,72,025,200500,72025200500
+"Census Tract 2006, Caguas Municipio, Puerto Rico",280,72,025,200600,72025200600
+"Census Tract 2007, Caguas Municipio, Puerto Rico",293,72,025,200700,72025200700
+"Census Tract 2008, Caguas Municipio, Puerto Rico",228,72,025,200800,72025200800
+"Census Tract 2009, Caguas Municipio, Puerto Rico",198,72,025,200900,72025200900
+"Census Tract 2010, Caguas Municipio, Puerto Rico",158,72,025,201000,72025201000
+"Census Tract 2012, Caguas Municipio, Puerto Rico",206,72,025,201200,72025201200
+"Census Tract 2013, Caguas Municipio, Puerto Rico",208,72,025,201300,72025201300
+"Census Tract 2014, Caguas Municipio, Puerto Rico",294,72,025,201400,72025201400
+"Census Tract 2015, Caguas Municipio, Puerto Rico",214,72,025,201500,72025201500
+"Census Tract 2016, Caguas Municipio, Puerto Rico",179,72,025,201600,72025201600
+"Census Tract 2017, Caguas Municipio, Puerto Rico",260,72,025,201700,72025201700
+"Census Tract 2018, Caguas Municipio, Puerto Rico",229,72,025,201800,72025201800
+"Census Tract 2019, Caguas Municipio, Puerto Rico",180,72,025,201900,72025201900
+"Census Tract 2020, Caguas Municipio, Puerto Rico",271,72,025,202000,72025202000
+"Census Tract 2021, Caguas Municipio, Puerto Rico",211,72,025,202100,72025202100
+"Census Tract 2022, Caguas Municipio, Puerto Rico",212,72,025,202200,72025202200
+"Census Tract 2023, Caguas Municipio, Puerto Rico",226,72,025,202300,72025202300
+"Census Tract 2024.02, Caguas Municipio, Puerto Rico",331,72,025,202402,72025202402
+"Census Tract 2024.03, Caguas Municipio, Puerto Rico",247,72,025,202403,72025202403
+"Census Tract 2024.04, Caguas Municipio, Puerto Rico",285,72,025,202404,72025202404
+"Census Tract 2025, Caguas Municipio, Puerto Rico",253,72,025,202500,72025202500
+"Census Tract 2026.01, Caguas Municipio, Puerto Rico",237,72,025,202601,72025202601
+"Census Tract 2026.02, Caguas Municipio, Puerto Rico",324,72,025,202602,72025202602
+"Census Tract 2027.01, Caguas Municipio, Puerto Rico",311,72,025,202701,72025202701
+"Census Tract 2027.02, Caguas Municipio, Puerto Rico",346,72,025,202702,72025202702
+"Census Tract 2028, Caguas Municipio, Puerto Rico",250,72,025,202800,72025202800
+"Census Tract 1221, Toa Baja Municipio, Puerto Rico",261,72,137,122100,72137122100
+"Census Tract 1222.01, Toa Baja Municipio, Puerto Rico",211,72,137,122201,72137122201
+"Census Tract 1222.02, Toa Baja Municipio, Puerto Rico",193,72,137,122202,72137122202
+"Census Tract 1224, Toa Baja Municipio, Puerto Rico",195,72,137,122400,72137122400
+"Census Tract 9900, Toa Baja Municipio, Puerto Rico",0,72,137,990000,72137990000
+"Census Tract 601.02, Trujillo Alto Municipio, Puerto Rico",254,72,139,060102,72139060102
+"Census Tract 601.03, Trujillo Alto Municipio, Puerto Rico",202,72,139,060103,72139060103
+"Census Tract 601.04, Trujillo Alto Municipio, Puerto Rico",199,72,139,060104,72139060104
+"Census Tract 602.11, Trujillo Alto Municipio, Puerto Rico",247,72,139,060211,72139060211
+"Census Tract 602.12, Trujillo Alto Municipio, Puerto Rico",320,72,139,060212,72139060212
+"Census Tract 602.13, Trujillo Alto Municipio, Puerto Rico",216,72,139,060213,72139060213
+"Census Tract 602.22, Trujillo Alto Municipio, Puerto Rico",375,72,139,060222,72139060222
+"Census Tract 602.23, Trujillo Alto Municipio, Puerto Rico",268,72,139,060223,72139060223
+"Census Tract 603.01, Trujillo Alto Municipio, Puerto Rico",443,72,139,060301,72139060301
+"Census Tract 603.02, Trujillo Alto Municipio, Puerto Rico",285,72,139,060302,72139060302
+"Census Tract 604.01, Trujillo Alto Municipio, Puerto Rico",280,72,139,060401,72139060401
+"Census Tract 604.03, Trujillo Alto Municipio, Puerto Rico",297,72,139,060403,72139060403
+"Census Tract 604.04, Trujillo Alto Municipio, Puerto Rico",315,72,139,060404,72139060404
+"Census Tract 605.01, Trujillo Alto Municipio, Puerto Rico",331,72,139,060501,72139060501
+"Census Tract 605.02, Trujillo Alto Municipio, Puerto Rico",247,72,139,060502,72139060502
+"Census Tract 9569, Utuado Municipio, Puerto Rico",292,72,141,956900,72141956900
+"Census Tract 9570, Utuado Municipio, Puerto Rico",301,72,141,957000,72141957000
+"Census Tract 9571, Utuado Municipio, Puerto Rico",317,72,141,957100,72141957100
+"Census Tract 9572, Utuado Municipio, Puerto Rico",299,72,141,957200,72141957200
+"Census Tract 9573, Utuado Municipio, Puerto Rico",234,72,141,957300,72141957300
+"Census Tract 9574, Utuado Municipio, Puerto Rico",256,72,141,957400,72141957400
+"Census Tract 9575, Utuado Municipio, Puerto Rico",157,72,141,957500,72141957500
+"Census Tract 9576, Utuado Municipio, Puerto Rico",210,72,141,957600,72141957600
+"Census Tract 5501, Vega Alta Municipio, Puerto Rico",351,72,143,550100,72143550100
+"Census Tract 5502, Vega Alta Municipio, Puerto Rico",186,72,143,550200,72143550200
+"Census Tract 5503, Vega Alta Municipio, Puerto Rico",340,72,143,550300,72143550300
+"Census Tract 5504, Vega Alta Municipio, Puerto Rico",252,72,143,550400,72143550400
+"Census Tract 5505, Vega Alta Municipio, Puerto Rico",527,72,143,550500,72143550500
+"Census Tract 5506.01, Vega Alta Municipio, Puerto Rico",305,72,143,550601,72143550601
+"Census Tract 5506.02, Vega Alta Municipio, Puerto Rico",287,72,143,550602,72143550602
+"Census Tract 9900, Vega Alta Municipio, Puerto Rico",0,72,143,990000,72143990000
+"Census Tract 5601, Vega Baja Municipio, Puerto Rico",198,72,145,560100,72145560100
+"Census Tract 5602.01, Vega Baja Municipio, Puerto Rico",168,72,145,560201,72145560201
+"Census Tract 5602.04, Vega Baja Municipio, Puerto Rico",204,72,145,560204,72145560204
+"Census Tract 5603, Vega Baja Municipio, Puerto Rico",246,72,145,560300,72145560300
+"Census Tract 5604.01, Vega Baja Municipio, Puerto Rico",161,72,145,560401,72145560401
+"Census Tract 5604.02, Vega Baja Municipio, Puerto Rico",311,72,145,560402,72145560402
+"Census Tract 5605, Vega Baja Municipio, Puerto Rico",150,72,145,560500,72145560500
+"Census Tract 3201, Camuy Municipio, Puerto Rico",209,72,027,320100,72027320100
+"Census Tract 3202, Camuy Municipio, Puerto Rico",268,72,027,320200,72027320200
+"Census Tract 3203, Camuy Municipio, Puerto Rico",309,72,027,320300,72027320300
+"Census Tract 3204.01, Camuy Municipio, Puerto Rico",285,72,027,320401,72027320401
+"Census Tract 3204.02, Camuy Municipio, Puerto Rico",289,72,027,320402,72027320402
+"Census Tract 3205, Camuy Municipio, Puerto Rico",293,72,027,320500,72027320500
+"Census Tract 3206, Camuy Municipio, Puerto Rico",330,72,027,320600,72027320600
+"Census Tract 9900, Camuy Municipio, Puerto Rico",0,72,027,990000,72027990000
+"Census Tract 1001.01, Canovanas Municipio, Puerto Rico",207,72,029,100101,72029100101
+"Census Tract 1001.03, Canovanas Municipio, Puerto Rico",180,72,029,100103,72029100103
+"Census Tract 1001.04, Canovanas Municipio, Puerto Rico",328,72,029,100104,72029100104
+"Census Tract 1002, Canovanas Municipio, Puerto Rico",235,72,029,100200,72029100200
+"Census Tract 1004, Canovanas Municipio, Puerto Rico",254,72,029,100400,72029100400
+"Census Tract 1005.02, Canovanas Municipio, Puerto Rico",227,72,029,100502,72029100502
+"Census Tract 1005.03, Canovanas Municipio, Puerto Rico",376,72,029,100503,72029100503
+"Census Tract 1005.04, Canovanas Municipio, Puerto Rico",247,72,029,100504,72029100504
+"Census Tract 1006.01, Canovanas Municipio, Puerto Rico",164,72,029,100601,72029100601
+"Census Tract 1006.02, Canovanas Municipio, Puerto Rico",219,72,029,100602,72029100602
+"Census Tract 1007, Canovanas Municipio, Puerto Rico",256,72,029,100700,72029100700
+"Census Tract 1008, Canovanas Municipio, Puerto Rico",142,72,029,100800,72029100800
+"Census Tract 501.03, Carolina Municipio, Puerto Rico",199,72,031,050103,72031050103
+"Census Tract 501.05, Carolina Municipio, Puerto Rico",207,72,031,050105,72031050105
+"Census Tract 501.06, Carolina Municipio, Puerto Rico",88,72,031,050106,72031050106
+"Census Tract 501.07, Carolina Municipio, Puerto Rico",156,72,031,050107,72031050107
+"Census Tract 501.10, Carolina Municipio, Puerto Rico",245,72,031,050110,72031050110
+"Census Tract 501.11, Carolina Municipio, Puerto Rico",154,72,031,050111,72031050111
+"Census Tract 502.11, Carolina Municipio, Puerto Rico",281,72,031,050211,72031050211
+"Census Tract 502.12, Carolina Municipio, Puerto Rico",239,72,031,050212,72031050212
+"Census Tract 502.21, Carolina Municipio, Puerto Rico",216,72,031,050221,72031050221
+"Census Tract 502.22, Carolina Municipio, Puerto Rico",329,72,031,050222,72031050222
+"Census Tract 502.31, Carolina Municipio, Puerto Rico",254,72,031,050231,72031050231
+"Census Tract 502.32, Carolina Municipio, Puerto Rico",257,72,031,050232,72031050232
+"Census Tract 502.41, Carolina Municipio, Puerto Rico",426,72,031,050241,72031050241
+"Census Tract 502.42, Carolina Municipio, Puerto Rico",311,72,031,050242,72031050242
+"Census Tract 503.02, Carolina Municipio, Puerto Rico",258,72,031,050302,72031050302
+"Census Tract 503.11, Carolina Municipio, Puerto Rico",191,72,031,050311,72031050311
+"Census Tract 503.21, Carolina Municipio, Puerto Rico",327,72,031,050321,72031050321
+"Census Tract 503.31, Carolina Municipio, Puerto Rico",256,72,031,050331,72031050331
+"Census Tract 503.41, Carolina Municipio, Puerto Rico",331,72,031,050341,72031050341
+"Census Tract 504.01, Carolina Municipio, Puerto Rico",151,72,031,050401,72031050401
+"Census Tract 504.02, Carolina Municipio, Puerto Rico",306,72,031,050402,72031050402
+"Census Tract 505.01, Carolina Municipio, Puerto Rico",285,72,031,050501,72031050501
+"Census Tract 505.03, Carolina Municipio, Puerto Rico",315,72,031,050503,72031050503
+"Census Tract 505.04, Carolina Municipio, Puerto Rico",320,72,031,050504,72031050504
+"Census Tract 506, Carolina Municipio, Puerto Rico",246,72,031,050600,72031050600
+"Census Tract 507, Carolina Municipio, Puerto Rico",153,72,031,050700,72031050700
+"Census Tract 508.03, Carolina Municipio, Puerto Rico",297,72,031,050803,72031050803
+"Census Tract 508.11, Carolina Municipio, Puerto Rico",309,72,031,050811,72031050811
+"Census Tract 508.12, Carolina Municipio, Puerto Rico",317,72,031,050812,72031050812
+"Census Tract 508.21, Carolina Municipio, Puerto Rico",348,72,031,050821,72031050821
+"Census Tract 508.22, Carolina Municipio, Puerto Rico",291,72,031,050822,72031050822
+"Census Tract 508.31, Carolina Municipio, Puerto Rico",356,72,031,050831,72031050831
+"Census Tract 508.41, Carolina Municipio, Puerto Rico",174,72,031,050841,72031050841
+"Census Tract 509.01, Carolina Municipio, Puerto Rico",414,72,031,050901,72031050901
+"Census Tract 509.02, Carolina Municipio, Puerto Rico",236,72,031,050902,72031050902
+"Census Tract 510.01, Carolina Municipio, Puerto Rico",297,72,031,051001,72031051001
+"Census Tract 510.02, Carolina Municipio, Puerto Rico",256,72,031,051002,72031051002
+"Census Tract 511.02, Carolina Municipio, Puerto Rico",261,72,031,051102,72031051102
+"Census Tract 511.03, Carolina Municipio, Puerto Rico",341,72,031,051103,72031051103
+"Census Tract 511.04, Carolina Municipio, Puerto Rico",300,72,031,051104,72031051104
+"Census Tract 9800.03, Carolina Municipio, Puerto Rico",0,72,031,980003,72031980003
+"Census Tract 9900, Carolina Municipio, Puerto Rico",0,72,031,990000,72031990000
+"Census Tract 202, Cata?o Municipio, Puerto Rico",271,72,033,020200,72033020200
+"Census Tract 203.02, Cata?o Municipio, Puerto Rico",227,72,033,020302,72033020302
+"Census Tract 204.03, Cata?o Municipio, Puerto Rico",329,72,033,020403,72033020403
+"Census Tract 204.22, Cata?o Municipio, Puerto Rico",278,72,033,020422,72033020422
+"Census Tract 204.23, Cata?o Municipio, Puerto Rico",343,72,033,020423,72033020423
+"Census Tract 204.25, Cata?o Municipio, Puerto Rico",268,72,033,020425,72033020425
+"Census Tract 204.26, Cata?o Municipio, Puerto Rico",202,72,033,020426,72033020426
+"Census Tract 204.27, Cata?o Municipio, Puerto Rico",111,72,033,020427,72033020427
+"Census Tract 205, Cata?o Municipio, Puerto Rico",266,72,033,020500,72033020500
+"Census Tract 9800.01, Cata?o Municipio, Puerto Rico",0,72,033,980001,72033980001
+"Census Tract 9800.02, Cata?o Municipio, Puerto Rico",0,72,033,980002,72033980002
+"Census Tract 9800.03, Cata?o Municipio, Puerto Rico",16,72,033,980003,72033980003
+"Census Tract 9800.04, Cata?o Municipio, Puerto Rico",0,72,033,980004,72033980004
+"Census Tract 9800.05, Cata?o Municipio, Puerto Rico",0,72,033,980005,72033980005
+"Census Tract 9800.06, Cata?o Municipio, Puerto Rico",0,72,033,980006,72033980006
+"Census Tract 9800.07, Cata?o Municipio, Puerto Rico",0,72,033,980007,72033980007
+"Census Tract 9800.08, Cata?o Municipio, Puerto Rico",0,72,033,980008,72033980008
+"Census Tract 9902.01, Cata?o Municipio, Puerto Rico",0,72,033,990201,72033990201
+"Census Tract 2601, Cayey Municipio, Puerto Rico",317,72,035,260100,72035260100
+"Census Tract 2602.01, Cayey Municipio, Puerto Rico",236,72,035,260201,72035260201
+"Census Tract 2602.02, Cayey Municipio, Puerto Rico",256,72,035,260202,72035260202
+"Census Tract 2603, Cayey Municipio, Puerto Rico",246,72,035,260300,72035260300
+"Census Tract 2604, Cayey Municipio, Puerto Rico",274,72,035,260400,72035260400
+"Census Tract 2605, Cayey Municipio, Puerto Rico",308,72,035,260500,72035260500
+"Census Tract 2606, Cayey Municipio, Puerto Rico",198,72,035,260600,72035260600
+"Census Tract 2607, Cayey Municipio, Puerto Rico",174,72,035,260700,72035260700
+"Census Tract 2608, Cayey Municipio, Puerto Rico",200,72,035,260800,72035260800
+"Census Tract 2609.01, Cayey Municipio, Puerto Rico",274,72,035,260901,72035260901
+"Census Tract 2609.02, Cayey Municipio, Puerto Rico",275,72,035,260902,72035260902
+"Census Tract 1601, Ceiba Municipio, Puerto Rico",4,72,037,160100,72037160100
+"Census Tract 1602.01, Ceiba Municipio, Puerto Rico",303,72,037,160201,72037160201
+"Census Tract 1602.02, Ceiba Municipio, Puerto Rico",229,72,037,160202,72037160202
+"Census Tract 1603, Ceiba Municipio, Puerto Rico",284,72,037,160300,72037160300
+"Census Tract 9900, Ceiba Municipio, Puerto Rico",0,72,037,990000,72037990000
+"Census Tract 9556, Ciales Municipio, Puerto Rico",314,72,039,955600,72039955600
+"Census Tract 9557, Ciales Municipio, Puerto Rico",164,72,039,955700,72039955700
+"Census Tract 9558, Ciales Municipio, Puerto Rico",299,72,039,955800,72039955800
+"Census Tract 9559, Ciales Municipio, Puerto Rico",300,72,039,955900,72039955900
+"Census Tract 2401.01, Cidra Municipio, Puerto Rico",332,72,041,240101,72041240101
+"Census Tract 2401.02, Cidra Municipio, Puerto Rico",259,72,041,240102,72041240102
+"Census Tract 2402.01, Cidra Municipio, Puerto Rico",266,72,041,240201,72041240201
+"Census Tract 2402.02, Cidra Municipio, Puerto Rico",235,72,041,240202,72041240202
+"Census Tract 2403, Cidra Municipio, Puerto Rico",226,72,041,240300,72041240300
+"Census Tract 2404.01, Cidra Municipio, Puerto Rico",283,72,041,240401,72041240401
+"Census Tract 2404.02, Cidra Municipio, Puerto Rico",211,72,041,240402,72041240402
+"Census Tract 2405, Cidra Municipio, Puerto Rico",304,72,041,240500,72041240500
+"Census Tract 2406.01, Cidra Municipio, Puerto Rico",323,72,041,240601,72041240601
+"Census Tract 2406.02, Cidra Municipio, Puerto Rico",277,72,041,240602,72041240602
+"Census Tract 9539, Coamo Municipio, Puerto Rico",200,72,043,953900,72043953900
+"Census Tract 9540, Coamo Municipio, Puerto Rico",239,72,043,954000,72043954000
+"Census Tract 9541, Coamo Municipio, Puerto Rico",238,72,043,954100,72043954100
+"Census Tract 9542, Coamo Municipio, Puerto Rico",220,72,043,954200,72043954200
+"Census Tract 9543, Coamo Municipio, Puerto Rico",208,72,043,954300,72043954300
+"Census Tract 9544, Coamo Municipio, Puerto Rico",255,72,043,954400,72043954400
+"Census Tract 9545, Coamo Municipio, Puerto Rico",289,72,043,954500,72043954500
+"Census Tract 9546, Coamo Municipio, Puerto Rico",309,72,043,954600,72043954600
+"Census Tract 9547, Coamo Municipio, Puerto Rico",264,72,043,954700,72043954700
+"Census Tract 9517, Comerio Municipio, Puerto Rico",256,72,045,951700,72045951700
+"Census Tract 9518, Comerio Municipio, Puerto Rico",334,72,045,951800,72045951800
+"Census Tract 9519, Comerio Municipio, Puerto Rico",181,72,045,951900,72045951900
+"Census Tract 9520, Comerio Municipio, Puerto Rico",211,72,045,952000,72045952000
+"Census Tract 9521, Comerio Municipio, Puerto Rico",276,72,045,952100,72045952100
+"Census Tract 5301, Corozal Municipio, Puerto Rico",217,72,047,530100,72047530100
+"Census Tract 5302, Corozal Municipio, Puerto Rico",371,72,047,530200,72047530200
+"Census Tract 5303, Corozal Municipio, Puerto Rico",232,72,047,530300,72047530300
+"Census Tract 5304, Corozal Municipio, Puerto Rico",258,72,047,530400,72047530400
+"Census Tract 5305, Corozal Municipio, Puerto Rico",306,72,047,530500,72047530500
+"Census Tract 5306, Corozal Municipio, Puerto Rico",266,72,047,530600,72047530600
+"Census Tract 9505, Culebra Municipio, Puerto Rico",225,72,049,950500,72049950500
+"Census Tract 9905.01, Culebra Municipio, Puerto Rico",0,72,049,990501,72049990501
+"Census Tract 5401, Dorado Municipio, Puerto Rico",188,72,051,540100,72051540100
+"Census Tract 5402, Dorado Municipio, Puerto Rico",292,72,051,540200,72051540200
+"Census Tract 5403, Dorado Municipio, Puerto Rico",234,72,051,540300,72051540300
+"Census Tract 5404, Dorado Municipio, Puerto Rico",353,72,051,540400,72051540400
+"Census Tract 5405, Dorado Municipio, Puerto Rico",302,72,051,540500,72051540500
+"Census Tract 5406, Dorado Municipio, Puerto Rico",331,72,051,540600,72051540600
+"Census Tract 5407, Dorado Municipio, Puerto Rico",233,72,051,540700,72051540700
+"Census Tract 9900.21, Dorado Municipio, Puerto Rico",0,72,051,990021,72051990021
+"Census Tract 1501.02, Fajardo Municipio, Puerto Rico",282,72,053,150102,72053150102
+"Census Tract 1501.04, Fajardo Municipio, Puerto Rico",298,72,053,150104,72053150104
+"Census Tract 1502, Fajardo Municipio, Puerto Rico",212,72,053,150200,72053150200
+"Census Tract 1503.01, Fajardo Municipio, Puerto Rico",299,72,053,150301,72053150301
+"Census Tract 1503.02, Fajardo Municipio, Puerto Rico",259,72,053,150302,72053150302
+"Census Tract 1504, Fajardo Municipio, Puerto Rico",285,72,053,150400,72053150400
+"Census Tract 1505, Fajardo Municipio, Puerto Rico",372,72,053,150500,72053150500
+"Census Tract 1506.01, Fajardo Municipio, Puerto Rico",184,72,053,150601,72053150601
+"Census Tract 1506.02, Fajardo Municipio, Puerto Rico",212,72,053,150602,72053150602
+"Census Tract 9901.03, Fajardo Municipio, Puerto Rico",0,72,053,990103,72053990103
+"Census Tract 5801, Florida Municipio, Puerto Rico",238,72,054,580100,72054580100
+"Census Tract 5802, Florida Municipio, Puerto Rico",251,72,054,580200,72054580200
+"Census Tract 9609, Guanica Municipio, Puerto Rico",271,72,055,960900,72055960900
+"Census Tract 9610, Guanica Municipio, Puerto Rico",161,72,055,961000,72055961000
+"Census Tract 9611, Guanica Municipio, Puerto Rico",189,72,055,961100,72055961100
+"Census Tract 9612, Guanica Municipio, Puerto Rico",187,72,055,961200,72055961200
+"Census Tract 9613, Guanica Municipio, Puerto Rico",231,72,055,961300,72055961300
+"Census Tract 9614, Guanica Municipio, Puerto Rico",137,72,055,961400,72055961400
+"Census Tract 9615, Guanica Municipio, Puerto Rico",169,72,055,961500,72055961500
+"Census Tract 9900, Guanica Municipio, Puerto Rico",0,72,055,990000,72055990000
+"Census Tract 2701, Guayama Municipio, Puerto Rico",255,72,057,270100,72057270100
+"Census Tract 2702.01, Guayama Municipio, Puerto Rico",195,72,057,270201,72057270201
+"Census Tract 2702.02, Guayama Municipio, Puerto Rico",738,72,057,270202,72057270202
+"Census Tract 2703, Guayama Municipio, Puerto Rico",196,72,057,270300,72057270300
+"Census Tract 2704, Guayama Municipio, Puerto Rico",191,72,057,270400,72057270400
+"Census Tract 2705, Guayama Municipio, Puerto Rico",181,72,057,270500,72057270500
+"Census Tract 2706, Guayama Municipio, Puerto Rico",210,72,057,270600,72057270600
+"Census Tract 2707, Guayama Municipio, Puerto Rico",202,72,057,270700,72057270700
+"Census Tract 2708, Guayama Municipio, Puerto Rico",282,72,057,270800,72057270800
+"Census Tract 9926, Guayama Municipio, Puerto Rico",0,72,057,992600,72057992600
+"Census Tract 7401.01, Guayanilla Municipio, Puerto Rico",325,72,059,740101,72059740101
+"Census Tract 7401.02, Guayanilla Municipio, Puerto Rico",208,72,059,740102,72059740102
+"Census Tract 7402, Guayanilla Municipio, Puerto Rico",361,72,059,740200,72059740200
+"Census Tract 7403, Guayanilla Municipio, Puerto Rico",271,72,059,740300,72059740300
+"Census Tract 7404, Guayanilla Municipio, Puerto Rico",343,72,059,740400,72059740400
+"Census Tract 9900.01, Guayanilla Municipio, Puerto Rico",0,72,059,990001,72059990001
+"Census Tract 401.01, Guaynabo Municipio, Puerto Rico",118,72,061,040101,72061040101
+"Census Tract 401.02, Guaynabo Municipio, Puerto Rico",211,72,061,040102,72061040102
+"Census Tract 401.03, Guaynabo Municipio, Puerto Rico",245,72,061,040103,72061040103
+"Census Tract 402, Guaynabo Municipio, Puerto Rico",292,72,061,040200,72061040200
+"Census Tract 403.01, Guaynabo Municipio, Puerto Rico",213,72,061,040301,72061040301
+"Census Tract 403.02, Guaynabo Municipio, Puerto Rico",163,72,061,040302,72061040302
+"Census Tract 403.03, Guaynabo Municipio, Puerto Rico",150,72,061,040303,72061040303
+"Census Tract 403.04, Guaynabo Municipio, Puerto Rico",239,72,061,040304,72061040304
+"Census Tract 404.03, Guaynabo Municipio, Puerto Rico",246,72,061,040403,72061040403
+"Census Tract 404.11, Guaynabo Municipio, Puerto Rico",369,72,061,040411,72061040411
+"Census Tract 404.12, Guaynabo Municipio, Puerto Rico",226,72,061,040412,72061040412
+"Census Tract 404.21, Guaynabo Municipio, Puerto Rico",416,72,061,040421,72061040421
+"Census Tract 404.22, Guaynabo Municipio, Puerto Rico",198,72,061,040422,72061040422
+"Census Tract 404.32, Guaynabo Municipio, Puerto Rico",195,72,061,040432,72061040432
+"Census Tract 404.42, Guaynabo Municipio, Puerto Rico",236,72,061,040442,72061040442
+"Census Tract 405, Guaynabo Municipio, Puerto Rico",266,72,061,040500,72061040500
+"Census Tract 406.01, Guaynabo Municipio, Puerto Rico",316,72,061,040601,72061040601
+"Census Tract 406.02, Guaynabo Municipio, Puerto Rico",392,72,061,040602,72061040602
+"Census Tract 407, Guaynabo Municipio, Puerto Rico",315,72,061,040700,72061040700
+"Census Tract 408, Guaynabo Municipio, Puerto Rico",212,72,061,040800,72061040800
+"Census Tract 409, Guaynabo Municipio, Puerto Rico",271,72,061,040900,72061040900
+"Census Tract 410, Guaynabo Municipio, Puerto Rico",133,72,061,041000,72061041000
+"Census Tract 411, Guaynabo Municipio, Puerto Rico",209,72,061,041100,72061041100
+"Census Tract 2101, Gurabo Municipio, Puerto Rico",268,72,063,210100,72063210100
+"Census Tract 2102.01, Gurabo Municipio, Puerto Rico",210,72,063,210201,72063210201
+"Census Tract 2102.02, Gurabo Municipio, Puerto Rico",344,72,063,210202,72063210202
+"Census Tract 2103, Gurabo Municipio, Puerto Rico",206,72,063,210300,72063210300
+"Census Tract 2104, Gurabo Municipio, Puerto Rico",263,72,063,210400,72063210400
+"Census Tract 2105.02, Gurabo Municipio, Puerto Rico",320,72,063,210502,72063210502
+"Census Tract 2105.03, Gurabo Municipio, Puerto Rico",278,72,063,210503,72063210503
+"Census Tract 2105.04, Gurabo Municipio, Puerto Rico",281,72,063,210504,72063210504
+"Census Tract 3101, Hatillo Municipio, Puerto Rico",325,72,065,310100,72065310100
+"Census Tract 3102, Hatillo Municipio, Puerto Rico",303,72,065,310200,72065310200
+"Census Tract 3103, Hatillo Municipio, Puerto Rico",246,72,065,310300,72065310300
+"Census Tract 3104, Hatillo Municipio, Puerto Rico",315,72,065,310400,72065310400
+"Census Tract 3105, Hatillo Municipio, Puerto Rico",287,72,065,310500,72065310500
+"Census Tract 3106, Hatillo Municipio, Puerto Rico",240,72,065,310600,72065310600
+"Census Tract 9900.16, Hatillo Municipio, Puerto Rico",0,72,065,990016,72065990016
+"Census Tract 8201, Hormigueros Municipio, Puerto Rico",300,72,067,820100,72067820100
+"Census Tract 8203, Hormigueros Municipio, Puerto Rico",355,72,067,820300,72067820300
+"Census Tract 8204, Hormigueros Municipio, Puerto Rico",233,72,067,820400,72067820400
+"Census Tract 8205, Hormigueros Municipio, Puerto Rico",337,72,067,820500,72067820500
+"Census Tract 1801, Humacao Municipio, Puerto Rico",330,72,069,180100,72069180100
+"Census Tract 1802.01, Humacao Municipio, Puerto Rico",173,72,069,180201,72069180201
+"Census Tract 1802.02, Humacao Municipio, Puerto Rico",271,72,069,180202,72069180202
