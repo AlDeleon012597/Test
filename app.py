@@ -6,6 +6,7 @@ import dash
 import dash_core_components as dcc
 import dash_html_components as html
 from dash.dependencies import Output, Input
+import dash_bootstrap_components as dbc
 import dash_table
 import datetime as dt
 from pandas.io.json import json_normalize
@@ -16,15 +17,17 @@ import os
 
 parent_dir = Path(__file__).resolve().parent
 
-countys_csv_path = os.path.join(parent_dir,r'CSV\Municipio_SVI_2018_0.csv')
-tracts_csv_path =  os.path.join(parent_dir,r'CSV\Tracts_SVI_2018_0.csv')
+###create csv paths
+counties_2018_SVI_path = os.path.join(parent_dir,'CSV','counties_SVI.csv')
+tracts_2018_SVI_path =  os.path.join(parent_dir,'CSV','tracts_SVI.csv')
 
-countys_csv = pd.read_csv(countys_csv_path,encoding = 'ISO-8859-1',sep = '\t')
-tracts_csv = pd.read_csv(tracts_csv_path,encoding = 'ISO-8859-1',sep = '\t')
+###Read csvs
+counties_SVI = pd.read_csv(counties_2018_SVI_path,encoding = 'ISO-8859-1')
+tracts_SVI = pd.read_csv(tracts_2018_SVI_path,encoding = 'ISO-8859-1')
 
 ##geojsons for chloropleth map
-county_geojson =  os.path.join(parent_dir,r'geojsons\Municipio_SVI_2018.geojson')
-tracts_geojson =  os.path.join(parent_dir,r'geojsons\Tracts_SVI_2018.geojson')
+county_geojson =  os.path.join(parent_dir,'geojsons','Municipio_SVI_2018.geojson')
+tracts_geojson =  os.path.join(parent_dir,'geojsons','Tracts.geojson')
 
 ##mapbox token needed to display pr basemap
 mapbox_accesstoken = 'pk.eyJ1IjoiYWxleGRlbGVvbjEyMyIsImEiOiJjazV1ZWRyanAwYzc2M2pucHVjejdrd2RhIn0.Z1O79Tq170L5eAzyKa-1jQ'
@@ -42,6 +45,25 @@ pl_deep=[[0.0, 'rgb(253, 253, 204)'],
          [0.9, 'rgb(55, 44, 80)'],
          [1.0, 'rgb(39, 26, 44)']]
 
+
+choro_colormap = {(2.0,3.0):{"size":4,"color":"#fee5d9"},
+            (3.0,3.5):{"size":7,"color":"#fcae91"},
+            (4.0,4.5):{"size":11,"color":"#fb6a4a"},
+            (4.5,5):{"size":15,"color":"#de2d26"},
+            (5.0,10):{"size":20,"color":"#a50f15"}}
+
+scat_colormap = {'ml':'#a6cee3',
+                 'Mint': '#1f78b4',
+                 'me':'#b2df8a',
+                 'mwr':'#33a02c',
+                 'mwb':'#fb9a99',
+                 'mwc':'#e31a1c',
+                 'mww':'#fdbf6f',
+                 'mb':'#ff7f00',
+                 'mfa':'#cab2d6',
+                 'mb_lg':'#6a3d9a',
+                 'md':'#b15928'}
+                 
 ### SVI Themes 
 themes = {'Household Composition and Disability':'HSECOMP', 
           'Minority Status and Language':'MINLANG', 
@@ -56,7 +78,7 @@ longitude = -66.487722
 
 #today's date
 today = dt.date.today().strftime("%Y-%m-%d")
-
+todayList = today.split('-')
 #set up bounding box or usgs api (bounding box is the defining space in which data will be retrieved)
 rectangle = "&minlatitude=17.9465534538&minlongitude=-67.2424275377&maxlatitude=18.5206011011&maxlongitude=-65.5910037909"
 url = r'https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&minmagnitude=2&orderby=time&starttime=2019-12-28&endtime='+ today +rectangle
@@ -91,6 +113,26 @@ external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
 
 app = dash.Dash(__name__, external_stylesheets = external_stylesheets)
 
+def Navbar():
+    navbar = dbc.NavbarSimple(
+        children=[
+            dbc.NavItem(dbc.NavLink("Home", href="/index")),
+            dbc.DropdownMenu(
+                children=[
+                    dbc.DropdownMenuItem("Page 2", href="#"),
+                    dbc.DropdownMenuItem("Page 3", href="#"),
+                ],
+                nav=True,
+                in_navbar=True,
+                label="More",
+            ),
+        ],
+        brand="Wine Dash",
+        color="primary",
+        dark=True,
+    )
+    return navbar
+    
 ###set up general layout for application
 app.layout = html.Div(children=[
     html.Img(className="logo", src=app.get_asset_url("Centro_Logo.png")),
@@ -98,7 +140,7 @@ app.layout = html.Div(children=[
     #dcc.Tabs(id = ')
     html.Div([
         html.Div([
-            dcc.Tabs(id="tabs-example", value='tab-1', children=[
+            dcc.Tabs(id="tabs-example", value='tab-2', children=[
                 dcc.Tab(
                         label='About',
                         value='tab-1',
@@ -110,16 +152,25 @@ app.layout = html.Div(children=[
                         label='Options',
                         value='tab-2',
                         children = [
-                                    html.P(
-                                        "Filter by SVI Theme:",
-                                        className = "control_label"
-                                        ),
-                                    dcc.Dropdown(
-                                        id='theme',
-                                        options=[{'label': theme, 'value': themes[theme]} for theme in themes],
-                                        value='OVERALL',
-                                        className = "filter_control"
-                                        ),
+                                    html.Button("Filter by SVI Theme:", 
+                                                id='button'),
+                                    html.Div([
+                                        dcc.Dropdown(
+                                            id='theme',
+                                            options=[{'label': theme, 'value': themes[theme]} for theme in themes],
+                                            value='OVERALL',
+                                            className = "filter_control"
+                                            ),
+                                        dcc.Dropdown(
+                                            id='year',
+                                            options=[{'label': year, 'value': suffix} for year,suffix in [(2016,"_16"),(2017,"_17"),(2018,"_18")]],
+                                            value= "_18",
+                                            className = "filter_control",
+                                            ),
+                                         ],
+                                        style= {'display': 'block'},
+                                        id = 'svi_div'
+                                    ),
                                     html.P(
                                         "Filter by Geography:",
                                         className = "control_label"
@@ -129,12 +180,12 @@ app.layout = html.Div(children=[
                                         options=[{'label': i, 'value': i} for i in ['Tracts', 'County']],
                                         value='Tracts',
                                         labelStyle={'display': 'inline-block'},
-                                        className = "filter_control"
+                                        className = "filter_control",
                                         ),
-                                    html.P(
-                                        "Specify Earthquake magnitude:",
-                                        className = "control_label "
-                                        ),
+                                     html.P(
+                                         "Specify Earthquake magnitude:",
+                                         className = "control_label "
+                                         ),
                                     dcc.Input(
                                         id="_min",
                                         type="number",
@@ -143,7 +194,7 @@ app.layout = html.Div(children=[
                                         min = 3,
                                         max = 5,
                                         step = .1,
-                                        className = "filter_control"
+                                        className = "filter_control",
                                         ),
                                     dcc.Input(
                                         id="_max",
@@ -152,12 +203,22 @@ app.layout = html.Div(children=[
                                         min=5,
                                         max=10,
                                         step = .1,
-                                        className = "filter_control"
+                                        className = "filter_control",
                                         ),
-                                     html.P(
-                                        "Layers:",
-                                        className = "control_label "
+                                    dcc.DatePickerRange(
+                                            id='date-picker',
+                                            className = 'filter_control',
+                                            min_date_allowed=dt.datetime(2016, 8, 5),
+                                            max_date_allowed=today,
+                                            initial_visible_month=today,
+                                            end_date=today,
+                                            start_date = dt.datetime(2019,12,28),
+                                            
                                         ),
+                                    html.P(
+                                         "Layers:",
+                                         className = "control_label "
+                                         ),                             
                                     dcc.Checklist(
                                         id = 'layers',
                                         options=[
@@ -167,9 +228,8 @@ app.layout = html.Div(children=[
                                         value=['SVI', 'EQ'],
                                         labelStyle={'display': 'inline-block'},
                                         className = "filter_control "
-                                        )
-                                    ],
-                                ),
+                                        ),
+                                    ]) ,   
                         dcc.Tab(
                             label='Data',
                             value='tab-3',
@@ -198,10 +258,9 @@ app.layout = html.Div(children=[
                                     ],
                                 ),
                             ],
-                        className = "content"
                         ),
                     ],
-                className = "one container_one"
+                className = "one container_one content"
             ),
         html.Div(
             [
@@ -223,12 +282,12 @@ app.layout = html.Div(children=[
                     selected_rows=[],
                     page_action='native',
                     page_current= 0,
-                    page_size= 10,
+                    page_size= 13,
                     style_table = {"width":"auto"},
                     ),
                 ],
-            className = "container_one"
-            ),
+            className = "container_one Two"
+            ), 
         ],
     className = "two"
     ),
@@ -251,23 +310,20 @@ app.layout = html.Div(children=[
             ],  
         className = " four"
         ),
+        html.Div(
+            [
+            dcc.Graph(
+                id='mag_scat',
+                className = "container_one",
+                ),
+            ],  
+        className = " five"
+        ),
     ],
              className = "container-display"),
-##    dcc.Graph(
-##        id='usgs-scatter'
-##        ),
-    html.Div(children='''
-        Data source from CDC @Jan 2020
-    ''')
-   ])
+   ],
+)
 
-colormap = {(2.0,3.0):{"size":4,"color":"#fee5d9"},
-            (3.0,3.5):{"size":7,"color":"#fcae91"},
-            (4.0,4.5):{"size":11,"color":"#fb6a4a"},
-            (4.5,5):{"size":15,"color":"#de2d26"},
-            (5.0,10):{"size":20,"color":"#a50f15"}}
-
-        
 ##switches geojson property id to geoid
 def parsegeojson(geo):
     with open(geo) as f:
@@ -278,49 +334,127 @@ def parsegeojson(geo):
     return pr_data
 
 ##ranks and sorts themes for barchart
-def rankThemes(df_themes,theme):
-    themerank = theme + "_rank"
-    df_themes[themerank] = df_themes[theme].rank(ascending=False)
-    x = df_themes.sort_values([themerank])["NAME"].tolist()
-    y = df_themes.sort_values([themerank])[theme].tolist()
-    return x,y
+def rankThemes(geo,theme,year):
+    if geo == 'County':
+       df_themes = counties_SVI
+       
+    if geo == 'Tracts':
+        theme_cols = [col for col in tracts_SVI.columns if theme in col]
+        tracts_clean = tracts_SVI.loc[tracts_SVI[theme_cols[0]] != -99999]
+        avg_themes = tracts_clean.groupby(['MUNICIPIO'],as_index=False)[theme_cols].mean()
+        theme_max = avg_themes[theme_cols].max()
+        theme_min = avg_themes[theme_cols].min()
+   
+        for selectedTheme in theme_cols:
+            avg_themes[selectedTheme] = avg_themes[selectedTheme].apply(lambda x:(x-theme_min[selectedTheme])/(theme_max[selectedTheme]-theme_min[selectedTheme]))
+        
+        df_themes = avg_themes
+        
+    themerank = theme + year + "_rank"
+    df_themes[themerank] = df_themes[theme + year].rank(ascending=False)
+    
+    municipios = df_themes.sort_values([themerank])["MUNICIPIO"].tolist()
+    theme_16 = df_themes.sort_values([themerank])[theme + "_16"].tolist()
+    theme_17 = df_themes.sort_values([themerank])[theme + "_17"].tolist()
+    theme_18 = df_themes.sort_values([themerank])[theme + "_18"].tolist()
+    
+    return municipios,theme_16, theme_17, theme_18
 
 ###assigns attributes based on user-selection
-def setAttr(geo,theme, bar = bool):
+def setAttr(geo,theme):
     if geo == 'County':
         geo = county_geojson
-        df = countys_csv
-        text = df['NAME'].str.title().tolist()
-        x,y = rankThemes(df,theme)
+        df = [counties_SVI]
+        text = df[0]['MUNICIPIO'].str.title().tolist()
 
     if geo == 'Tracts':
         geo = tracts_geojson
-        df = tracts_csv
-        text = df['Tract_Name'].str.title().tolist()
-        avg_themes = df.groupby(['NAME'],as_index=False)['HSECOMP','MINLANG','HSETRANS','SOCIOECON','OVERALL'].mean()
+        theme_cols = [col for col in tracts_SVI.columns if theme in col]
         
-        theme_max = avg_themes[theme].max()
-        theme_min = avg_themes[theme].min()
-        avg_themes[theme] = avg_themes[theme].apply(lambda x:(x-theme_min)/(theme_max-theme_min)) ###Normalizes averages to a scale of 0-1
-        x,y =rankThemes(avg_themes,theme)
-    
-    if bar:
-        return geo,df,text,x,y
-    else:
-        return geo,df,text
+        df_clean = tracts_SVI.loc[tracts_SVI[theme_cols[0]] != -99999]
+        df_na = tracts_SVI.loc[tracts_SVI[theme_cols[0]] == -99999]
+        
+        df = [df_clean,df_na]
+        text = df[0]['TRACT'].str.title().tolist()
+
+    return geo,df,text
 
 
-def setmag(_min,_max): 
-    if _min and not _max:
-        df_magrange = df_earth.loc[ _min < df_earth['mag']]
-    elif not _min and _max:
-        df_magrange = df_earth.loc[df_earth['mag'] < _max]
-    elif _max and _min:
-        df_magrange = df_earth.loc[ (_min < df_earth['mag']) & (df_earth['mag'] < _max)]
+def setRange(lower,upper,col): 
+
+    if lower and not upper:
+        df_range = df_earth.loc[lower < df_earth[col] ]
+        
+    elif not lower and upper:
+        df_range = df_earth.loc[df_earth[col] < upper]
+        
+    elif lower and upper:
+        df_range = df_earth.loc[ (lower < df_earth[col]) & (df_earth[col] < upper)]
+        
     else:
-        df_magrange = df_earth     
-    return df_magrange
+        df_range = df_earth     
+    return df_range
+
+ 
+@app.callback(
+   Output(component_id='svi_div', component_property='style'),
+   [Input(component_id='button', component_property='n_clicks')])
+
+def show_hide_element(n_clicks):
+    if not n_clicks:
+        return {'display': 'none'} 
+    elif (n_clicks % 2) == 0:
+        return {'display': 'none'} 
+    else:
+        return {'display': 'block'}
+        
+@app.callback(
+    dash.dependencies.Output('mag_scat', 'figure'),
+    [Input('date-picker', 'start_date'),
+     Input('date-picker', 'end_date'),
+     Input('_min', 'value'),
+     Input('_max', 'value'),])
+
+def updatescatterplot(start, end,_min,_max):
+    df_mags = setRange(_min,_max,'mag')
+    df_time = setRange(start,end,'time')
+    traces = []
+    for magType in scat_colormap:
+        if magType in df_mags['magType'].values.tolist():
+            traces.append(go.Scatter(
+                y=df_mags[df_mags['magType'] == magType]['mag'],
+                x=df_time['time'],
+                xaxis='x2',
+                yaxis='y2',
+                mode="markers",
+                marker_color = scat_colormap[magType],
+                orientation='v',
+                name = magType,
+            ))
     
+    layout = go.Layout(
+        autosize = True,
+        xaxis2={
+            'title':'Time',
+            'zeroline': False,
+            "showline": False,
+            "showticklabels":True,
+            'showgrid':True,
+            'domain': [0, 1],
+            'side': 'left',
+            'anchor': 'x2',
+        },
+
+        yaxis2={
+            'title': 'Magnitude',
+            'domain': [0, 1],
+            'range': [0,10],
+            'anchor': 'y2',
+
+        },
+        margin=dict(l=100, r=75, t=50, b=110))
+        
+    return {"data":traces,"layout":layout}
     
 @app.callback(
     Output('pr-chloro', 'figure'),
@@ -328,51 +462,106 @@ def setmag(_min,_max):
      Input('geo', 'value'),
      Input('_min', 'value'),
      Input('_max', 'value'),
-     Input('layers','value')
+     Input('layers','value'),
+     Input('year','value')
      ])
 
-def update_chloro(theme, geo,_min,_max, layers):
+def update_chloro(theme, geo,_min,_max, layers,year):
     traces = []   
     if "EQ" in layers:
-        df_mags = setmag(_min,_max)
-        for mag_range in colormap:
+        df_mags = setRange(_min,_max,'mag')
+        for mag_range in choro_colormap:
             if mag_range == (5.0,10):
                 name = "{} {}".format(mag_range[0],"and up")
             else:   
                 name = "{0} to {1}".format(mag_range[0],mag_range[1])
             df_mags_range = df_mags.loc[(df_mags['mag'] >= mag_range[0]) & (df_mags['mag']<mag_range[1])]
+            
             traces.append(go.Scattermapbox(
                 lat=df_mags_range['lat'],
                 lon=df_mags_range['long'],
                 mode='markers',
-                marker={"color":colormap[mag_range]['color'],
-                            "size":colormap[mag_range]['size'],
+                marker={"color":choro_colormap[mag_range]['color'],
+                            "size":choro_colormap[mag_range]['size'],
                             "opacity": 1},   
                 name = "{0} to {1}".format(mag_range[0],mag_range[1]),            
                 text= df_mags_range[['place','mag']],
                 texttemplate = "%Name:%{df_mags_range['place']}\nMagnitude:%{df_mags_range['mag']}",
-                showlegend = True
-
+                showlegend = True,
             ))
+            
     if "SVI" in layers:
-        geo,df_chloro,text = setAttr(geo,theme, bar=False)
-        pr_data = parsegeojson(geo)
+        geojson,df_chloro,text = setAttr(geo,theme)
+        pr_data = parsegeojson(geojson)
         traces.append(go.Choroplethmapbox(
             geojson = pr_data,
-            locations = df_chloro['GEOID'].tolist(),
-            z = df_chloro[theme].tolist(), 
+            locations = df_chloro[0]['GEOID'].tolist(),
+            z = df_chloro[0][theme + year].tolist(), 
             colorscale = pl_deep,
             text = text, 
-            colorbar = dict(thickness=20, ticklen=3),
+            colorbar = dict(thickness=20,
+                            ticklen=3,
+                            xanchor = 'left',
+                            x= 0),
             marker_line_width=0, 
             marker_opacity=0.6,
             subplot='mapbox1')
             ),
             
+        if geo == 'Tracts':
+            traces.append(go.Choroplethmapbox(
+                geojson = pr_data,
+                locations = df_chloro[1]['GEOID'].tolist(),
+                z = df_chloro[1][theme + year].tolist(), 
+                text = text, 
+                colorbar = dict(thickness=20,
+                            ticklen=3,
+                            xanchor = 'left',
+                            x= -1),
+                autocolorscale = False,
+                showscale = False,
+                marker_line_width=0, 
+                marker_opacity=0.8,
+                subplot='mapbox1')
+                ),
+                
     layout = go.Layout(
         clickmode="event+select",
         autosize = True,
         #automargin = True,
+        updatemenus=[
+            dict(
+                buttons=(
+                    [
+                        dict(
+                            args=[
+                                {
+                                    "mapbox.zoom": 7.5,
+                                    "mapbox.center.lon": longitude,
+                                    "mapbox.center.lat": latitude,
+                                    "mapbox.bearing": 0,
+                                    "mapbox.style": "dark",
+                                }
+                            ],
+                            label="Reset Zoom",
+                            method="relayout",
+                        )
+                    ]
+                ),
+                direction="left",
+                pad={"r": 0, "t": 0, "b": 0, "l": 0},
+                showactive=False,
+                type="buttons",
+                x=0.45,
+                y=0.02,
+                xanchor="left",
+                yanchor="bottom",
+                bgcolor="#323130",
+                borderwidth=1,
+                bordercolor="#6d6d6d",
+                font=dict(color="#FFFFFF"),
+            ),
+        ],   
         mapbox1 = dict(
             domain = {'x': [0, 1],'y': [0, 1]},
             center = dict(lat=latitude, lon=longitude),
@@ -391,38 +580,79 @@ def update_chloro(theme, geo,_min,_max, layers):
 @app.callback(
     Output('pr-bar', 'figure'),
     [Input('theme', 'value'),
-     Input('geo', 'value')])
+     Input('geo', 'value'),
+     Input('year','value')]
+     )
 
-def update_bar(theme, geo):
-    geo,df,text,x,y = setAttr(geo,theme,bar=True)
+def update_bar(theme, geo, year):
+    municipios,theme_16, theme_17, theme_18 = rankThemes(geo,theme, year)
     
-    traces = go.Bar(
-        y=y,
-        x=x,
+    traces = []
+    traces.append(go.Bar(
+        y=theme_16,
+        x=municipios,
         xaxis='x2',
         yaxis='y2',
+        name = '2016',
         marker=dict(
-            color='rgba(91, 207, 135, 0.3)',
+            color='#1b9e77',
             line=dict(
                 color='rgba(91, 207, 135, 2.0)',
                 width=0.3),
         ),
         orientation='v',
     )
+),
+ 
+    traces.append(go.Bar(
+        y=theme_17,
+        x=municipios,
+        xaxis='x2',
+        yaxis='y2',
+        name = '2017',
+        marker=dict(
+            color='#d95f02',
+            line=dict(
+                color='rgba(91, 207, 135, 2.0)',
+                width=0.3),
+        ),
+        orientation='v',
+    )
+),
+      
+    traces.append(go.Bar(
+        y=theme_18,
+        x=municipios,
+        xaxis='x2',
+        yaxis='y2',
+        name = '2018',
+        marker=dict(
+            color='#7570b3',
+            line=dict(
+                color='rgba(91, 207, 135, 2.0)',
+                width=0.3),
+        ),
+        orientation='v',
+    )
+),
     
     layout = go.Layout(
+        title = "Social Vulnerability Index from 2016 to 2018",
         autosize = True,
+        yaxis_title = theme,
         xaxis2={
+            "title": 'Municipio',
             'zeroline': False,
             "showline": False,
             "showticklabels":True,
             'showgrid':True,
             'domain': [0, 1],
             'side': 'left',
-            'anchor': 'x2',
+            'anchor': 'x2', 
         },
 
         yaxis2={
+            'title': theme,
             'domain': [0, 1],
             'range': [0,1],
             'anchor': 'y2',
@@ -433,7 +663,7 @@ def update_bar(theme, geo):
         #plot_bgcolor='rgb(204, 204, 204)',
     )
     
-    return {"data":[traces],"layout":layout}
+    return {"data":traces,"layout":layout}
 
 if __name__ == '__main__':
     app.run_server(debug=True)
