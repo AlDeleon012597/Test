@@ -11,6 +11,7 @@ Django==3.0.1
 Flask==1.1.1
 Flask-Compress==1.4.0
 future==0.18.2
+gunicorn==19.9.0
 idna==2.8
 itsdangerous==1.1.0
 Jinja2==2.10.3
@@ -29,3 +30,4 @@ urllib3==1.25.8
 virtualenv==16.7.9
 virtualenvwrapper-win==1.2.5
 Werkzeug==0.16.0
+wincertstore==0.2
