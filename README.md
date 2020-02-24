@@ -1,12 +1,12 @@
 # Social Vulnerability Index Web App
 Web Application for SVI using Dash.
 
-Dash Docs:https://dash.plot.ly/
-Flask Docs: https://flask.palletsprojects.com/en/1.1.x/
-Adding CSS & JS and Overriding the Page-Load Template: https://dash.plot.ly/external-resources
+Dash Docs:https://dash.plot.ly/  
+Flask Docs: https://flask.palletsprojects.com/en/1.1.x/  
+Adding CSS & JS and Overriding the Page-Load Template: https://dash.plot.ly/external-resources  
 
-Development Version:https://dev1-hazard-vulnerability.herokuapp.com/
-Production Version: https://svi-dash-app.herokuapp.com/
+Development Version:https://dev1-hazard-vulnerability.herokuapp.com/   
+Production Version: https://svi-dash-app.herokuapp.com/   
 
 ## Development
 Instructions for developers and contributors to this project. 
