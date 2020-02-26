@@ -287,7 +287,7 @@ app.layout = html.Div(children=[
                 loading_state = {"is_loading":True}
                 ),
             ],
-        className = " four"
+        className = "four"
         ),
         html.Div(
             [
@@ -296,7 +296,7 @@ app.layout = html.Div(children=[
                 className = "container_one",
                 ),
             ],
-        className = " five"
+        className = "five"
         ),
     ],
              className = "container-display"),
