@@ -114,7 +114,9 @@ app = dash.Dash(__name__, external_stylesheets = external_stylesheets)
 
 ###set up general layout for application
 app.layout = html.Div(children=[
-    html.Img(className="logo", src=app.get_asset_url("Pictures/Centro_Logo.PNG")),
+    logo_path = parent_dir / "Pictures" / "Centro_Logo.PNG"
+    
+    html.Img(className="logo", src=app.get_asset_url(logo_path)),
     html.H1(id = "title", children='Hazard Vulnerability'),
     #dcc.Tabs(id = ')
     html.Div([
