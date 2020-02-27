@@ -11,9 +11,7 @@ from HelperFunctions import openGeoJson,rankThemes,setAttr,setRange,show_hide
 from navbar import Navbar
 from Options import pl_deep, chloro_colormap, scat_colormap, themes
 from usgs_api import df_earth,latitude,longitude,today, min_date
-from files import counties_SVI,tracts_SVI
-import flask
-import io
+
 
 ##mapbox token needed to display pr basemap
 mapbox_accesstoken = 'pk.eyJ1IjoiYWxleGRlbGVvbjEyMyIsImEiOiJjazV1ZWRyanAwYzc2M2pucHVjejdrd2RhIn0.Z1O79Tq170L5eAzyKa-1jQ'
@@ -28,212 +26,218 @@ app = dash.Dash(__name__, external_stylesheets = external_stylesheets)
             
 app.layout = html.Div(children=[
     html.Div([Navbar()], style = {'backgroundColor':'purple'}, className = 'navbar'),
-   # html.Img(className="logo", src=app.get_asset_url("Centro_Logo.png")),
+    html.Img(className="logo", src=app.get_asset_url("Centro_Logo.png")),
     html.H1(id = "title", children='Hazard Vulnerability'),
     #dcc.Tabs(id = ')
     html.Div([
         html.Div([
-            html.Div([
-                dcc.Tabs(id="tabs-example", value='tab-2', children=[
-                    dcc.Tab(
-                            label='About',
-                            value='tab-1',
-                            children = [
-                                        html.H1("About page")
-                                    ],
-                                ),
-                    dcc.Tab(
-                            label='Options',
-                            value='tab-2',
-                            children = [
-                                        html.Button("Filter by SVI Theme:", 
-                                                    id='button_svi',
-                                                    className = 'button'),
-                                        html.Div([
-                                            dcc.Dropdown(
-                                                id='theme',
-                                                options=[{'label': theme, 'value': themes[theme]} for theme in themes],
-                                                value='OVERALL',
-                                                className = "filter_control"
-                                                ),
-                                            dcc.Dropdown(
-                                                id='year',
-                                                options=[{'label': year, 'value': suffix} for year,suffix in [(2016,"_16"),(2017,"_17"),(2018,"_18")]],
-                                                value= "_18",
-                                                className = "filter_control",
-                                                ),
-                                             ],
-                                            style= {'display': 'block'},
-                                            id = 'svi_div'
-                                        ),
+            dcc.Tabs(id="tabs-example", value='tab-2', children=[
+                dcc.Tab(
+                        label='About',
+                        value='tab-1',
+                        children = [
+                                    html.H1("About page")
+                                ],
+                            ),
+                dcc.Tab(
+                        label='Options',
+                        value='tab-2',
+                        children = [
+                                    html.Button("Filter by SVI Theme:", 
+                                                id='button_svi',
+                                                className = 'button'),
+                                    html.Div([
+                                        dcc.Dropdown(
+                                            id='theme',
+                                            options=[{'label': theme, 'value': themes[theme]} for theme in themes],
+                                            value='OVERALL',
+                                            className = "filter_control"
+                                            ),
+                                        dcc.Dropdown(
+                                            id='year',
+                                            options=[{'label': year, 'value': suffix} for year,suffix in [(2016,"_16"),(2017,"_17"),(2018,"_18")]],
+                                            value= "_18",
+                                            className = "filter_control",
+                                            ),
+                                         ],
+                                        style= {'display': 'block'},
+                                        id = 'svi_div'
+                                    ),
+                                    
+                                    html.Button("Map Filters:", 
+                                                id='button_map',
+                                                className = 'button'),
+                                    html.Div([
                                         
-                                        html.Button("Map Filters:", 
-                                                    id='button_map',
-                                                    className = 'button'),
-                                        html.Div([
-                                            
-                                            html.P(
-                                                "Filter by Geography:",
-                                                className = "control_label"
-                                                ),
-                                            dcc.RadioItems(
-                                                id='geo',
-                                                options=[{'label': i, 'value': i} for i in ['Tracts', 'County']],
-                                                value='Tracts',
-                                                labelStyle={'display': 'inline-block'},
-                                                className = "filter_control",
-                                                ),
-                                            html.P(
-                                            "Layers:",
-                                            className = "control_label "
-                                             ),                             
-                                            dcc.Checklist(
-                                                id = 'layers',
-                                                options=[
-                                                    {'label': 'SVI Chloropleth', 'value': 'SVI'},
-                                                    {'label': 'Earthquakes', 'value': 'EQ'},
-                                                ],
-                                                value=['SVI', 'EQ'],
-                                                labelStyle={'display': 'inline-block'},
-                                                className = "filter_control "
-                                                ),
-                                             ],
-                                            style= {'display': 'block'},
-                                            id = 'map_div'
-                                        ),
-                                        
-                                        html.Button("Earth Quake Filters:", 
-                                                    id='button_eq',
-                                                    className = 'button'),
-                                        html.Div([
-                                            
-                                            html.P(
-                                                 "Specify Earthquake magnitude:",
-                                                 className = "control_label "
-                                                 ),
-                                                 
-                                            dcc.Input(
-                                                id="_min",
-                                                type="number",
-                                                debounce=True,
-                                                placeholder="Min",
-                                                min = 3,
-                                                max = 5,
-                                                step = .1,
-                                                className = "filter_control",
-                                                ),
-                                                
-                                            dcc.Input(
-                                                id="_max",
-                                                type="number",
-                                                placeholder="Max",
-                                                min=5,
-                                                max=10,
-                                                step = .1,
-                                                className = "filter_control",
-                                                ),
-                                                
-                                            dcc.DatePickerRange(
-                                                    id='date-picker',
-                                                    className = 'filter_control',
-                                                    min_date_allowed=min_date,
-                                                    max_date_allowed=today,
-                                                    initial_visible_month=today,
-                                                    end_date=today,
-                                                    start_date = min_date,
-                                                    
-                                                ),
+                                        html.P(
+                                            "Filter by Geography:",
+                                            className = "control_label"
+                                            ),
+                                        dcc.RadioItems(
+                                            id='geo',
+                                            options=[{'label': i, 'value': i} for i in ['Tracts', 'County']],
+                                            value='Tracts',
+                                            labelStyle={'display': 'inline-block'},
+                                            className = "filter_control",
+                                            ),
+                                        html.P(
+                                        "Layers:",
+                                        className = "control_label "
+                                         ),                             
+                                        dcc.Checklist(
+                                            id = 'layers',
+                                            options=[
+                                                {'label': 'SVI Chloropleth', 'value': 'SVI'},
+                                                {'label': 'Earthquakes', 'value': 'EQ'},
                                             ],
-                                            style= {'display': 'block'},
-                                            id = 'eq_div'
-                                        ),  
-                                    ]
-                                ),   
+                                            value=['SVI', 'EQ'],
+                                            labelStyle={'display': 'inline-block'},
+                                            className = "filter_control "
+                                            ),
+                                         ],
+                                        style= {'display': 'block'},
+                                        id = 'map_div'
+                                    ),
+                                    
+                                    html.Button("Earth Quake Filters:", 
+                                                id='button_eq',
+                                                className = 'button'),
+                                    html.Div([
+                                        
+                                        html.P(
+                                             "Specify Earthquake magnitude:",
+                                             className = "control_label "
+                                             ),
+                                             
+                                        dcc.Input(
+                                            id="_min",
+                                            type="number",
+                                            debounce=True,
+                                            placeholder="Min",
+                                            min = 3,
+                                            max = 5,
+                                            step = .1,
+                                            className = "filter_control",
+                                            ),
+                                            
+                                        dcc.Input(
+                                            id="_max",
+                                            type="number",
+                                            placeholder="Max",
+                                            min=5,
+                                            max=10,
+                                            step = .1,
+                                            className = "filter_control",
+                                            ),
+                                            
+                                        dcc.DatePickerRange(
+                                                id='date-picker',
+                                                className = 'filter_control',
+                                                min_date_allowed=min_date,
+                                                max_date_allowed=today,
+                                                initial_visible_month=today,
+                                                end_date=today,
+                                                start_date = min_date,
+                                                
+                                            ),
+                                        ],
+                                        style= {'display': 'block'},
+                                        id = 'eq_div'
+                                    ),  
+                                ]
+                            ),   
                         dcc.Tab(
                             label='Data',
                             value='tab-3',
-                            children = [
-                                        dcc.Dropdown(id='my-dropdown', 
-                                                    value='default',
-                                                    options=[
-                                                             {'label': 'SVI Tracts', 'value': "tracts_svi"},
-                                                             {'label': 'SVI Counties', 'value': "counties_SVI"},
-                                                             {'label': 'USGS Earthquakes', 'value':'USGS Earthquakes' }
-                                                         ]
-                                                    ),
-                                        html.A('Download CSV', 
-                                                id='my-link'
-                                            ),      
-                                        ],
-                                    ),
-                                ],
-                            ),
-                        ],
-                    ),
-                ],
-                className = "one container_one content"
-                ),
-            html.Div(
-                [
-                html.Div(
-                    [
-                    dash_table.DataTable(
-                        id='datatable-interactivity',
-                        columns=[
-                            {'name': i, 'id': i, 'deletable': True} for i in df_earth.columns
-                            # omit the id column
-                            if i != 'id'
-                        ],
-                        data=df_earth.to_dict('records'),
-                        editable=False,
-                        sort_action="native",
-                        sort_mode='multi',
-                        row_selectable='multi',
-                        row_deletable=True,
-                        selected_rows=[],
-                        page_action='native',
-                        page_current= 0,
-                        page_size= 13,
-                        style_table = {"width":"auto"},
+                            children = [                                  
+                                        dcc.Upload(
+                                            id="upload-data",
+                                            children=html.Div(
+                                                [
+                                                    "Drag and Drop or "
+                                                    "click to import "
+                                                    ".CSV file here!"
+                                                ],
+                                            style={
+                                                'width': '95%',
+                                                'height': '60px',
+                                                'lineHeight': '60px',
+                                                'borderWidth': '1px',
+                                                'borderStyle': 'dashed',
+                                                'borderRadius': '5px',
+                                                'textAlign': 'center',
+                                                'margin': '10px'
+                                            },
+                                            ),
+                                            multiple=True,
+                                        ),
+                                    ],
+                                ),
+                            ],
                         ),
                     ],
-                className = "container_one Two"
-                ), 
-            ],
-        className = "two"
-        ),
-            html.Div(
-                [
-                dcc.Graph(
-                    id='pr-chloro',
-                    className = "container_one"
-                    )
-                ], 
-            className = "three"
+                className = "one container_one content"
             ),
+        html.Div(
+            [
             html.Div(
                 [
-                dcc.Graph(
-                    id='pr-bar',
-                    className = "container_one",
-                    loading_state = {"is_loading":True}
+                dash_table.DataTable(
+                    id='datatable-interactivity',
+                    columns=[
+                        {'name': i, 'id': i, 'deletable': True} for i in df_earth.columns
+                        # omit the id column
+                        if i != 'id'
+                    ],
+                    data=df_earth.to_dict('records'),
+                    editable=False,
+                    sort_action="native",
+                    sort_mode='multi',
+                    row_selectable='multi',
+                    row_deletable=True,
+                    selected_rows=[],
+                    page_action='native',
+                    page_current= 0,
+                    page_size= 13,
+                    style_table = {"width":"auto"},
                     ),
-                ],  
-            className = " four"
-            ),
-            html.Div(
-                [
-                dcc.Graph(
-                    id='mag_scat',
-                    className = "container_one",
-                    ),
-                ],  
-            className = " five"
-            ),
+                ],
+            className = "container_one Two"
+            ), 
         ],
-        className = "container-display"
-        )
+    className = "two"
+    ),
+        html.Div(
+            [
+            dcc.Graph(
+                id='pr-chloro',
+                className = "container_one"
+                )
+            ], 
+        className = "three"
+        ),
+        html.Div(
+            [
+            dcc.Graph(
+                id='pr-bar',
+                className = "container_one",
+                loading_state = {"is_loading":True}
+                ),
+            ],  
+        className = " four"
+        ),
+        html.Div(
+            [
+            dcc.Graph(
+                id='mag_scat',
+                className = "container_one",
+                ),
+            ],  
+        className = " five"
+        ),
     ],
+             className = "container-display"),
+   ],
 )
 
 
@@ -523,28 +527,6 @@ def update_bar(theme, geo, year):
     )
     
     return {"data":traces,"layout":layout}
-    
-@app.callback(Output('my-link', 'href'), 
-    [Input('my-dropdown', 'value')])
-def update_link(value):
-    return '/dash/urlToDownload?value={}'.format(value)
 
-
-@app.server.route('/dash/urlToDownload')
-def download_csv():
-    value = flask.request.args.get('value')
-    # create a dynamic csv or file here using `StringIO`
-    # (instead of writing to the file system)
-    str_io = io.StringIO()
-    str_io.write('You have selected {}'.format(value))
-    mem = io.BytesIO()
-    mem.write(str_io.getvalue().encode('ISO-8859-1'))
-    mem.seek(0)
-    str_io.close()
-    return flask.send_file(mem,
-                           mimetype='text/csv',
-                           attachment_filename='downloadFile.csv',
-                           as_attachment=True)
-                           
 if __name__ == '__main__':
     app.run_server(debug=True)
