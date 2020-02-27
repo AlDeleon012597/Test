@@ -124,6 +124,7 @@ h1, h2, h3, h4, h5 {
   margin-left: 8px;
 }
 
+
 #title {
   text-align: center;
   font-weight: bold;
@@ -139,6 +140,27 @@ h1, h2, h3, h4, h5 {
   box-shadow: 2px 2px 2px lightgrey;
 }
 
+.button{
+  background-color: #bdbdbd;
+	width: 100%;
+	height: 30px;
+  color: white;
+  outline: none;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.block-display button{
+  margin-bottom:10px;
+  display:block;
+}
+
+.button:hover{
+  background-color: #f0f0f0;
+  font-size: 18px;
+  transition: 0.25s;
+}
 
 @media screen and (max-width: 600px) {
   .column {
