@@ -239,7 +239,7 @@ app.layout = html.Div(children=[
                             ],
                         ),
                     ],
-                className = "one container_one content"
+                className = "one container-one content"
             ),
         html.Div(
             [
@@ -265,7 +265,7 @@ app.layout = html.Div(children=[
                     style_table = {"width":"auto"},
                     ),
                 ],
-            className = "container_one Two"
+            className = "container-one Two"
             ),
         ],
     className = "two"
@@ -274,7 +274,7 @@ app.layout = html.Div(children=[
             [
             dcc.Graph(
                 id='pr-chloro',
-                className = "container_one"
+                className = "container-one"
                 )
             ],
         className = "three"
@@ -283,7 +283,7 @@ app.layout = html.Div(children=[
             [
             dcc.Graph(
                 id='pr-bar',
-                className = "container_one",
+                className = "container-one",
                 loading_state = {"is_loading":True}
                 ),
             ],
@@ -293,7 +293,7 @@ app.layout = html.Div(children=[
             [
             dcc.Graph(
                 id='mag_scat',
-                className = "container_one",
+                className = "container-one",
                 ),
             ],
         className = "five"

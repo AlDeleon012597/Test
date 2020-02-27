@@ -12,25 +12,26 @@ h1, h2, h3, h4, h5 {
   padding-left: 12px;
 }
 
-
 .logo {
   height: 35px;
   padding-bottom: 12px;
   margin-left: 8px;
 }
 
-.columns {
-  margin-left: 0.5%;
+#title {
+  text-align: center;
+  font-weight: bold;
+  font-size: 50px
 }
 
-
-.container_one{
+.container-one{
   border-radius:5px;
   background-color: #f9f9f9;
-  margin: 5px;
+  margin: 1vh auto;
   padding: 5px;
   position: relative;
   box-shadow: 3px 3px 3px lightgrey;
+  width: 50%;
 }
 
 .content{
@@ -75,48 +76,6 @@ h1, h2, h3, h4, h5 {
   list-style: none
 }
 
-.one {
-  grid-column: 1/5;
-  grid-row: 1/7;
-}
-
-.two { 
-  grid-column: 5/16;
-  grid-row: 1/7;
-  position: relative;
-}
-
-.three {
-  grid-column: 1/12;
-  grid-row: 7/14
-}
-
-.js-plotly-plot .plotly .modebar {
-  padding-top: 5%;
-  margin-right: 3.5%;
-}
-
-.four {
-  grid-column: 1/19;
-  grid-row: 13/20;
-}
-
-.five {
-  grid-column: 12/19;
-  grid-row: 7/14;
-}
-.six {
-  grid-column: 16/20;
-  grid-row: 7/14;
-}
-
-
-#title {
-  text-align: center;
-  font-weight: bold;
-  font-size: 50px
-}
-
 .mini_container {
   border-radius: 5px;
   background-color: #f9f9f9;
@@ -127,11 +86,7 @@ h1, h2, h3, h4, h5 {
 }
 
 
-@media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
-  }
-}
+
 @media (min-width: 400px) {
   .container {
     width: 85%;
@@ -229,12 +184,36 @@ blockquote {
   .container-display {
     display: flex;
     flex-direction: column;
-
   }
 
-  .tab-container.jsx-4017309047 {
+  #tabs-example {
     flex-direction: row;
   }
+
+  .jsx-4017309047.tab-content {
+
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: 0 auto; 
+  }
+
+  #button {
+    display: block;
+    margin: 1vh auto;
+    width: 30%;
+  }
+
+  #svi_div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  #svi_div > div {
+    min-width: 30%;
+  }
+
 }
 
 @media screen and (min-width: 992px) {
@@ -256,15 +235,10 @@ blockquote {
 }
 
 @media screen and (min-width: 1200px) {
+ 
 
-  /* .container-display {
-    display: grid;
-    grid-template-columns: repeat(20,5%);
-    grid-gap: 12px;
-    grid-template-rows: repeat(20,5%);
-  } */
 
-  .one.container_one.content {
+  .one.container-one.content {
     margin: 1vh auto;
     width: 50%;
   }
@@ -280,6 +254,56 @@ blockquote {
   }
 }
 
+
+@media screen and (min-width: 1546px) {
+.container-display {
+    display: grid;
+    grid-template-columns: repeat(20,5%);
+    grid-gap: 12px;
+    grid-template-rows: repeat(20,5%);
+
+    
+}
+  .one {
+    grid-column: 1/5;
+    grid-row: 1/7;
+  }
+
+  .two { 
+    grid-column: 5/16;
+    grid-row: 1/7;
+    position: relative;
+  }
+
+  .three {
+    grid-column: 1/12;
+    grid-row: 7/14
+  }
+
+  .js-plotly-plot .plotly .modebar {
+    padding-top: 5%;
+    margin-right: 3.5%;
+  }
+
+  .four {
+    grid-column: 1/19;
+    grid-row: 13/20;
+  }
+
+  .five {
+    grid-column: 12/19;
+    grid-row: 7/14;
+  }
+  .six {
+    grid-column: 16/20;
+    grid-row: 7/14;
+  }
+  .columns {
+    margin-left: 0.5%;
+  }
+}
+
+
 /*
 #upload-data{
             'width': '100%';
@@ -290,6 +314,17 @@ blockquote {
             'borderRadius': '5px';
             'textAlign': 'center';
             'margin': '10px';
+}
+
+/*
+
+
+
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
 }
 
 */

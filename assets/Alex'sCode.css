@@ -1,0 +1,61 @@
+
+
+/*
+#upload-data{
+            'width': '100%';
+            'height': '60px';
+            'lineHeight': '60px';
+            'borderWidth': '1px';
+            'borderStyle': 'dashed';
+            'borderRadius': '5px';
+            'textAlign': 'center';
+            'margin': '10px';
+}
+
+
+.one {
+  grid-column: 1/5;
+  grid-row: 1/7;
+}
+
+.two { 
+  grid-column: 5/16;
+  grid-row: 1/7;
+  position: relative;
+}
+
+.three {
+  grid-column: 1/12;
+  grid-row: 7/14
+}
+
+.js-plotly-plot .plotly .modebar {
+  padding-top: 5%;
+  margin-right: 3.5%;
+}
+
+.four {
+  grid-column: 1/19;
+  grid-row: 13/20;
+}
+
+.five {
+  grid-column: 12/19;
+  grid-row: 7/14;
+}
+.six {
+  grid-column: 16/20;
+  grid-row: 7/14;
+}
+
+.columns {
+  margin-left: 0.5%;
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+}
+*/
