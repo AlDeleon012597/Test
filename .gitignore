@@ -2,3 +2,5 @@
 pip-log.txt
 assets/Alex'sCode
 # Jupyter Notebooks
+.vscode 
+venv

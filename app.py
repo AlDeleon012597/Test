@@ -29,7 +29,7 @@ county_geojson =  os.path.join(parent_dir,'geojsons','Municipio_SVI_2018.geojson
 tracts_geojson =  os.path.join(parent_dir,'geojsons','Tracts.geojson')
 
 ### Path to Centro Logo
-logo_path = parent_dir / 'Pictures' / 'Centro_Logo.PNG'
+logo_path = os.path.join('Pictures','Centro_Logo.PNG')
 ##mapbox token needed to display pr basemap
 mapbox_accesstoken = 'pk.eyJ1IjoiYWxleGRlbGVvbjEyMyIsImEiOiJjazV1ZWRyanAwYzc2M2pucHVjejdrd2RhIn0.Z1O79Tq170L5eAzyKa-1jQ'
 
